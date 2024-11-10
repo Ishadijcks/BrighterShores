@@ -27,6 +27,6 @@ export const toCurrency = (value: number): Currency => {
 	return {
 		gold: Math.floor(value / 1000000),
 		silver: Math.floor((value % 1000000) / 1000),
-		copper: Math.floor(value % 1000)
+		copper: Math.floor(value % 1000),
 	};
 };

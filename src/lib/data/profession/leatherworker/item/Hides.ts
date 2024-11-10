@@ -73,13 +73,13 @@ export const hides: Item[] = rawHides.map((h) => {
 		description: h.description,
 		professions: [
 			{ profession: ProfessionId.Merchant, level: h.merchantLevel },
-			{ profession: ProfessionId.Leatherworker, level: h.leatherworkerLevel }
+			{ profession: ProfessionId.Leatherworker, level: h.leatherworkerLevel },
 		],
 		id: h.id,
 		episodes: [EpisodeId.Crenopolis],
 		buyValue: h.buyValue,
 		sellValue: h.sellValue,
 		shops: [ShopId.HideStall],
-		storages: [StorageType.HidesBank]
+		storages: [StorageType.HidesBank],
 	};
 });

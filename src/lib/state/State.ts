@@ -28,6 +28,6 @@ export const state: State = {
 		[ProfessionId.Leatherworker]: 0,
 		[ProfessionId.Merchant]: 0,
 
-		[ProfessionId.Armorer]: 0
-	}
+		[ProfessionId.Armorer]: 0,
+	},
 };

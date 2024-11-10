@@ -6,5 +6,5 @@ export const guard: Profession = {
 	name: 'Guard',
 	icon: 'profession/guard.png',
 	actions: [],
-	passives: []
+	passives: [],
 };

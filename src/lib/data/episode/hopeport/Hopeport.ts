@@ -4,5 +4,5 @@ import { EpisodeId } from '$lib/data/game/EpisodeId';
 export const hopeport: Episode = {
 	id: EpisodeId.Hopeport,
 	name: 'Hopeport',
-	icon: 'episode/hopeport.png'
+	icon: 'episode/hopeport.png',
 };

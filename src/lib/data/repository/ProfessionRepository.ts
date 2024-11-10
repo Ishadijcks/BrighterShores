@@ -42,9 +42,9 @@ export class ProfessionRepository {
 		watchman,
 		detective,
 		leatherworker,
-		merchant
+		merchant,
 
-		// armorer,
+		armorer,
 	];
 
 	public static getProfession(id: ProfessionId): Profession {

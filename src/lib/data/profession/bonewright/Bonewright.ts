@@ -6,5 +6,5 @@ export const bonewright: Profession = {
 	name: 'Bonewright',
 	icon: 'profession/bonewright.png',
 	actions: [],
-	passives: []
+	passives: [],
 };

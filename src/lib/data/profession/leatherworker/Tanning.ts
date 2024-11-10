@@ -66,6 +66,6 @@ export const tanningActions: Action[] = rawTanningActions.map((action) => {
 		requirements: [{ profession: ProfessionId.Leatherworker, level: action.level }],
 		input: [{ id: action.hide, amount: 1 }],
 		output: [{ id: action.leather, amount: 1 }],
-		experience: [{ profession: ProfessionId.Leatherworker, amount: action.exp }]
+		experience: [{ profession: ProfessionId.Leatherworker, amount: action.exp }],
 	};
 });

@@ -99,5 +99,5 @@ export enum ItemId {
 	PerfectBrownCowLeather,
 	PerfectBisonLeather,
 	PerfectBuffaloLeather,
-	PerfectHalebeastLeather
+	PerfectHalebeastLeather,
 }

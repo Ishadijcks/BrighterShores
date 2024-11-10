@@ -1,4 +1,4 @@
 export enum ShopId {
 	HideStall,
-	LeatherStall
+	LeatherStall,
 }

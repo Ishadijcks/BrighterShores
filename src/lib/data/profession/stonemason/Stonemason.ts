@@ -6,5 +6,5 @@ export const stonemason: Profession = {
 	name: 'Stonemason',
 	icon: 'profession/stonemason.png',
 	actions: [],
-	passives: []
+	passives: [],
 };

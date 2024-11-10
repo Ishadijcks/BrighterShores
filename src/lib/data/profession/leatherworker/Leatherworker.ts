@@ -7,5 +7,5 @@ export const leatherworker: Profession = {
 	name: 'Leatherworker',
 	icon: 'profession/leatherworker.png',
 	actions: [...tanningActions],
-	passives: []
+	passives: [],
 };

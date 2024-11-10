@@ -6,5 +6,5 @@ export const gatherer: Profession = {
 	name: 'Gatherer',
 	icon: 'profession/gatherer.png',
 	actions: [],
-	passives: []
+	passives: [],
 };

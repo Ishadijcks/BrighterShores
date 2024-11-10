@@ -3,5 +3,5 @@ export enum EpisodeId {
 	Hopeforest,
 	MineOfMantuban,
 	Crenopolis,
-	StonemawHill
+	StonemawHill,
 }

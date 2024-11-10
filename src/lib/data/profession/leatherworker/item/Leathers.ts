@@ -78,13 +78,13 @@ export const leathers: Item[] = rawLeathers.map((h) => {
 		description: h.description,
 		professions: [
 			{ profession: ProfessionId.Leatherworker, level: leatherWorkerLevel },
-			{ profession: ProfessionId.Armorer, level: h.armorerLevel }
+			{ profession: ProfessionId.Armorer, level: h.armorerLevel },
 		],
 		id: h.id,
 		episodes: [EpisodeId.Crenopolis],
 		buyValue: h.buyValue,
 		sellValue: h.sellValue,
 		shops: [ShopId.LeatherStall],
-		storages: [StorageType.LeathersBank]
+		storages: [StorageType.LeathersBank],
 	};
 });

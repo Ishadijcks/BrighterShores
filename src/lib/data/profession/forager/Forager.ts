@@ -6,5 +6,5 @@ export const forager: Profession = {
 	name: 'Forager',
 	icon: 'profession/forager.png',
 	actions: [],
-	passives: []
+	passives: [],
 };

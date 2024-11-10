@@ -6,5 +6,5 @@ export const blacksmith: Profession = {
 	name: 'Blacksmith',
 	icon: 'profession/blacksmith.png',
 	actions: [],
-	passives: []
+	passives: [],
 };
