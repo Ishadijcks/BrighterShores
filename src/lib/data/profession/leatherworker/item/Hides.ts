@@ -80,6 +80,6 @@ export const hides: Item[] = rawHides.map((h) => {
 		buyValue: h.buyValue,
 		sellValue: h.sellValue,
 		shops: [ShopId.HideStall],
-		storages: [StorageType.HidesBank],
+		storages: [StorageType.HidesBank]
 	};
 });

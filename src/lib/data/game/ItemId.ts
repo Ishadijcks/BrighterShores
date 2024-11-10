@@ -1,6 +1,4 @@
 export enum ItemId {
-
-
 	/** Leatherworking **/
 
 	// Hides
@@ -101,6 +99,5 @@ export enum ItemId {
 	PerfectBrownCowLeather,
 	PerfectBisonLeather,
 	PerfectBuffaloLeather,
-	PerfectHalebeastLeather,
-
+	PerfectHalebeastLeather
 }

@@ -7,9 +7,10 @@
 	}
 
 	let { reqs }: Props = $props();
-
 </script>
 
-{#each reqs as req}
-	<LevelRequirementDisplay {req} />&nbsp;
-{/each}
+<div class="flex flex-row space-x-2">
+	{#each reqs as req}
+		<LevelRequirementDisplay {req} />&nbsp;
+	{/each}
+</div>

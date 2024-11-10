@@ -1,14 +1,15 @@
 <script lang="ts">
 	import type { LevelRequirement } from '$lib/model/profession/LevelRequirement';
-	import { ProfessionRepository } from '$lib/data/repository/ProfessionRepository';
+	import ProfessionIcon from '$lib/components/ProfessionIcon.svelte';
 
 	interface Props {
 		req: LevelRequirement;
 	}
 
 	let { req }: Props = $props();
-
-	const profession = $derived(ProfessionRepository.getProfession(req.profession));
 </script>
 
-<span>{req.level} {profession.name}</span>
+<div class="flex flex-row items-center space-x-1">
+	<ProfessionIcon id={req.profession}></ProfessionIcon>
+	<span>{req.level}</span>
+</div>

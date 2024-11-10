@@ -7,7 +7,6 @@
 	}
 
 	let { exps }: Props = $props();
-
 </script>
 
 {#each exps as exp}

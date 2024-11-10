@@ -30,9 +30,9 @@ const rawLeathers: Leather[] = [
 	{ id: ItemId.ModerateBlackCowLeather, name: 'Moderate Black Cow Leather', description: '', buyValue: 0, sellValue: 2525, armorerLevel: 0 },
 	{ id: ItemId.ModerateSheepLeather, name: 'Moderate Sheep Leather', description: '', buyValue: 0, sellValue: 2601, armorerLevel: 0 },
 	{ id: ItemId.ModerateBrownCowLeather, name: 'Moderate Brown Cow Leather', description: '', buyValue: 0, sellValue: 2792, armorerLevel: 0 },
-	{ id: ItemId.ModerateBisonLeather, name: 'Moderate Bison Leather', description: '', buyValue: 0, sellValue: 0, armorerLevel: 0 },
-	{ id: ItemId.ModerateBuffaloLeather, name: 'Moderate Buffalo Leather', description: '', buyValue: 0, sellValue: 0, armorerLevel: 0 },
-	{ id: ItemId.ModerateHalebeastLeather, name: 'Moderate Halebeast Leather', description: '', buyValue: 0, sellValue: 0, armorerLevel: 0 },
+	{ id: ItemId.ModerateBisonLeather, name: 'Moderate Bison Leather', description: '', buyValue: 0, sellValue: 3180, armorerLevel: 0 },
+	{ id: ItemId.ModerateBuffaloLeather, name: 'Moderate Buffalo Leather', description: '', buyValue: 0, sellValue: 3410, armorerLevel: 0 },
+	{ id: ItemId.ModerateHalebeastLeather, name: 'Moderate Halebeast Leather', description: '', buyValue: 0, sellValue: 3761, armorerLevel: 0 },
 	{ id: ItemId.FineWhiteCowLeather, name: 'Fine White Cow Leather', description: '', buyValue: 0, sellValue: 0, armorerLevel: 0 },
 	{ id: ItemId.FineDeerLeather, name: 'Fine Deer Leather', description: '', buyValue: 0, sellValue: 0, armorerLevel: 0 },
 	{ id: ItemId.FineBlackCowLeather, name: 'Fine Black Cow Leather', description: '', buyValue: 0, sellValue: 0, armorerLevel: 0 },
@@ -69,8 +69,9 @@ const rawLeathers: Leather[] = [
 ];
 
 export const leathers: Item[] = rawLeathers.map((h) => {
-
-	const leatherWorkerLevel = rawHides.find(hide => hide.name === h.name.replace("Leather", "Hide"))?.leatherworkerLevel ?? 0;
+	const leatherWorkerLevel =
+		rawHides.find((hide) => hide.name === h.name.replace('Leather', 'Hide'))?.leatherworkerLevel ??
+		0;
 
 	return {
 		name: h.name,
@@ -84,6 +85,6 @@ export const leathers: Item[] = rawLeathers.map((h) => {
 		buyValue: h.buyValue,
 		sellValue: h.sellValue,
 		shops: [ShopId.LeatherStall],
-		storages: [StorageType.LeathersBank],
+		storages: [StorageType.LeathersBank]
 	};
 });

@@ -1,14 +1,15 @@
 <script lang="ts">
-	import { ProfessionRepository } from '$lib/data/repository/ProfessionRepository';
 	import type { Experience } from '$lib/model/profession/Experience';
+	import ProfessionIcon from '$lib/components/ProfessionIcon.svelte';
 
 	interface Props {
 		exp: Experience;
 	}
 
 	let { exp }: Props = $props();
-
-	const profession = $derived(ProfessionRepository.getProfession(exp.profession));
 </script>
 
-<span>{exp.amount} {profession.name}</span>
+<div class="flex flex-row items-center space-x-1">
+	<ProfessionIcon id={exp.profession} />
+	<span>{exp.amount}</span>
+</div>

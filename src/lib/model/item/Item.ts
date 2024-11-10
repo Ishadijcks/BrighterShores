@@ -12,6 +12,6 @@ export interface Item {
 	buyValue: number;
 	sellValue: number;
 	description: string;
-	storages?: StorageType[]
-	shops?: ShopId[]
+	storages?: StorageType[];
+	shops?: ShopId[];
 }

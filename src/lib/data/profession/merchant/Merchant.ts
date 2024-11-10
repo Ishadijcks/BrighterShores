@@ -3,9 +3,8 @@ import { ProfessionId } from '$lib/data/game/ProfessionId';
 
 export const merchant: Profession = {
 	id: ProfessionId.Merchant,
-	name: "Merchant",
-	actions: [
-	],
+	name: 'Merchant',
+	icon: 'profession/merchant.png',
+	actions: [],
 	passives: []
-
 };

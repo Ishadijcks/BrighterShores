@@ -1,5 +1,4 @@
 <script lang="ts">
-
 	import { toCurrency } from '$lib/util/Pricing';
 
 	interface Props {
@@ -7,12 +6,28 @@
 	}
 
 	let { amount }: Props = $props();
-	const currency = $derived(toCurrency(amount))
+	const currency = $derived(toCurrency(amount));
 </script>
 
-<span> {amount} </span>
-<!--<span>-->
-<!--	{#if currency.gold}{currency.gold}G, {/if}-->
-<!--	{#if currency.silver}{currency.silver}S, {/if}-->
-<!--	{#if currency.bronze}{currency.bronze}B {/if}-->
-<!--</span>-->
+<div class="flex flex-row space-x-2">
+	{#if currency.gold > 0}
+		<div class="flex flex-row items-center space-x-1">
+			<img class="h-4 w-4" src="/images/currency/gold.png" alt="Gold" />
+			<span>{currency.gold}</span>
+		</div>
+	{/if}
+
+	{#if currency.silver > 0}
+		<div class="flex flex-row items-center space-x-1">
+			<img class="h-4 w-4" src="/images/currency/silver.png" alt="Silver" />
+			<span>{currency.silver}</span>
+		</div>
+	{/if}
+
+	{#if currency.copper > 0}
+		<div class="flex flex-row items-center space-x-1">
+			<img class="h-4 w-4" src="/images/currency/copper.png" alt="Copper" />
+			<span>{currency.copper}</span>
+		</div>
+	{/if}
+</div>

@@ -4,10 +4,8 @@ import { tanningActions } from '$lib/data/profession/leatherworker/Tanning';
 
 export const leatherworker: Profession = {
 	id: ProfessionId.Leatherworker,
-	name: "Leatherworker",
-	actions: [
-		...tanningActions,
-	],
+	name: 'Leatherworker',
+	icon: 'profession/leatherworker.png',
+	actions: [...tanningActions],
 	passives: []
-
 };

@@ -1,6 +1,25 @@
 <script lang="ts">
 	import '../app.css';
+
+	import { AppBar } from '@skeletonlabs/skeleton-svelte';
+	import GitHub from 'lucide-svelte/icons/github';
+
 	let { children } = $props();
 </script>
 
-{@render children()}
+<AppBar>
+	{#snippet trail()}
+		<a href="https://github.com/ishadijcks/BrighterShores" target="_blank">
+			<GitHub size={20} />
+		</a>
+	{/snippet}
+
+	<a class="px-4" href="/">Home</a>
+	<a class="px-4" href="/episodes">Episodes</a>
+	<a class="px-4" href="/professions">Professions</a>
+	<a class="px-4" href="/items">Items</a>
+</AppBar>
+
+<div class="p-4">
+	{@render children()}
+</div>

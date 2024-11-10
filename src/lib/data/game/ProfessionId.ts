@@ -21,5 +21,5 @@ export enum ProfessionId {
 	Leatherworker,
 	Merchant,
 
-	Armorer,
+	Armorer
 }

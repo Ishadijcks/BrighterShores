@@ -23,10 +23,10 @@ const rawTanningActions: TanningAction[] = [
 	{ level: 18, hide: ItemId.ModerateDeerHide, leather: ItemId.ModerateDeerLeather, exp: 165 },
 	{ level: 23, hide: ItemId.ModerateBlackCowHide, leather: ItemId.ModerateBlackCowLeather, exp: 197 },
 	{ level: 29, hide: ItemId.ModerateSheepHide, leather: ItemId.ModerateSheepLeather, exp: 215 },
-	{ level: 35, hide: ItemId.ModerateBrownCowHide, leather: ItemId.ModerateBrownCowLeather, exp: 0 },
-	{ level: 44, hide: ItemId.ModerateBisonHide, leather: ItemId.ModerateBisonLeather, exp: 0 },
-	{ level: 51, hide: ItemId.ModerateBuffaloHide, leather: ItemId.ModerateBuffaloLeather, exp: 0 },
-	{ level: 57, hide: ItemId.ModerateHalebeastHide, leather: ItemId.ModerateHalebeastLeather, exp: 0 },
+	{ level: 35, hide: ItemId.ModerateBrownCowHide, leather: ItemId.ModerateBrownCowLeather, exp: 243 },
+	{ level: 44, hide: ItemId.ModerateBisonHide, leather: ItemId.ModerateBisonLeather, exp: 325 },
+	{ level: 51, hide: ItemId.ModerateBuffaloHide, leather: ItemId.ModerateBuffaloLeather, exp: 317 },
+	{ level: 57, hide: ItemId.ModerateHalebeastHide, leather: ItemId.ModerateHalebeastLeather, exp: 426 },
 	{ level: 66, hide: ItemId.FineWhiteCowHide, leather: ItemId.FineWhiteCowLeather, exp: 0 },
 	{ level: 72, hide: ItemId.FineDeerHide, leather: ItemId.FineDeerLeather, exp: 0 },
 	{ level: 78, hide: ItemId.FineBlackCowHide, leather: ItemId.FineBlackCowLeather, exp: 0 },
@@ -63,11 +63,9 @@ const rawTanningActions: TanningAction[] = [
 
 export const tanningActions: Action[] = rawTanningActions.map((action) => {
 	return {
-		requirements: [
-			{ profession: ProfessionId.Leatherworker, level: action.level }
-		],
+		requirements: [{ profession: ProfessionId.Leatherworker, level: action.level }],
 		input: [{ id: action.hide, amount: 1 }],
 		output: [{ id: action.leather, amount: 1 }],
-		experience: [{ profession: ProfessionId.Leatherworker, amount: action.exp }],
+		experience: [{ profession: ProfessionId.Leatherworker, amount: action.exp }]
 	};
 });

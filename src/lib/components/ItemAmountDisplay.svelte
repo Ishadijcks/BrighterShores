@@ -1,5 +1,4 @@
 <script lang="ts">
-
 	import type { ItemAmount } from '$lib/model/item/ItemAmount';
 	import { ItemRepository } from '$lib/data/repository/ItemRepository';
 

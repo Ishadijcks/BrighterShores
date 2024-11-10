@@ -4,10 +4,7 @@ import { leathers } from '$lib/data/profession/leatherworker/item/Leathers';
 import type { ItemId } from '$lib/data/game/ItemId';
 
 export class ItemRepository {
-	public static items: Item[] = [
-		...hides,
-		...leathers,
-	];
+	public static items: Item[] = [...hides, ...leathers];
 
 	public static getItem(id: ItemId): Item {
 		const item = this.items.find((item) => item.id === id);

@@ -11,12 +11,12 @@ export default {
 		join(require.resolve('@skeletonlabs/skeleton-svelte'), '../**/*.{html,js,svelte,ts}')
 	],
 	theme: {
-		extend: {},
+		extend: {}
 	},
 	plugins: [
 		skeleton({
 			// NOTE: each theme included will be added to your CSS bundle
-			themes: [ themes.cerberus, themes.rose ]
+			themes: [themes.cerberus, themes.rose]
 		})
 	]
-}
+};

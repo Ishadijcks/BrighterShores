@@ -1,5 +1,4 @@
 <script lang="ts">
-
 	import type { ItemAmount } from '$lib/model/item/ItemAmount';
 	import ItemAmountDisplay from '$lib/components/ItemAmountDisplay.svelte';
 
@@ -8,7 +7,6 @@
 	}
 
 	let { items }: Props = $props();
-
 </script>
 
 {#each items as item}
