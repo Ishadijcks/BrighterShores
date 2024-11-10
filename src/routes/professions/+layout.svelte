@@ -1,4 +1,6 @@
 <script lang="ts">
+	import { base } from '$app/paths';
+
 	import { AppBar } from '@skeletonlabs/skeleton-svelte';
 	import { ProfessionRepository } from '$lib/data/repository/ProfessionRepository.js';
 	import ProfessionIcon from '$lib/components/ProfessionIcon.svelte';
@@ -11,7 +13,7 @@
 <AppBar>
 	<div class="flex flex-row flex-wrap justify-center">
 		{#each professions as profession}
-			<a href="/professions/{profession.name}">
+			<a href="{base}/professions/{profession.name}">
 				<div class="flex flex-col items-center p-2">
 					<ProfessionIcon id={profession.id} />
 					<span class="text-sm">{profession.name}</span>

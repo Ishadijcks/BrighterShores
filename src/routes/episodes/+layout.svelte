@@ -1,4 +1,6 @@
 <script lang="ts">
+	import { base } from '$app/paths';
+
 	import { AppBar } from '@skeletonlabs/skeleton-svelte';
 	import EpisodeIcon from '$lib/components/EpisodeIcon.svelte';
 	import { EpisodeRepository } from '$lib/data/repository/EpisodeRepository';
@@ -11,7 +13,7 @@
 <AppBar>
 	<div class="flex flex-row flex-wrap justify-center">
 		{#each episodes as episode}
-			<a href="/episodes/{episode.name}">
+			<a href="{base}/episodes/{episode.name}">
 				<div class="flex flex-col items-center p-2">
 					<EpisodeIcon id={episode.id} />
 					<span class="text-sm">{episode.name}</span>

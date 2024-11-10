@@ -1,5 +1,6 @@
 <script lang="ts">
 	import '../app.css';
+	import { base } from '$app/paths';
 
 	import { AppBar } from '@skeletonlabs/skeleton-svelte';
 	import GitHub from 'lucide-svelte/icons/github';
@@ -14,10 +15,10 @@
 		</a>
 	{/snippet}
 
-	<a class="px-4" href="/">Home</a>
-	<a class="px-4" href="/episodes">Episodes</a>
-	<a class="px-4" href="/professions">Professions</a>
-	<a class="px-4" href="/items">Items</a>
+	<a class="px-4" href="{base}/">Home</a>
+	<a class="px-4" href="{base}/episodes">Episodes</a>
+	<a class="px-4" href="{base}/professions">Professions</a>
+	<a class="px-4" href="{base}/items">Items</a>
 </AppBar>
 
 <div class="p-4">
