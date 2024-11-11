@@ -6,6 +6,14 @@
 	import GitHub from 'lucide-svelte/icons/github';
 
 	let { children } = $props();
+
+
+	import { setContext } from 'svelte';
+	import { localStore } from '$lib/util/LocalStore.svelte';
+	import { createDefaultState } from '$lib/state/State';
+
+	const state = localStore('state', createDefaultState());
+	setContext('state', state);
 </script>
 
 <AppBar>

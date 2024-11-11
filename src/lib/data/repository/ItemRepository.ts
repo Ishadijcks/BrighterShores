@@ -4,12 +4,12 @@ import { leathers } from '$lib/data/profession/leatherworker/item/Leathers';
 import type { ItemId } from '$lib/data/game/ItemId';
 import { logs } from '$lib/data/profession/woodcutter/item/Logs';
 import { planks } from '$lib/data/profession/carpenter/item/Planks';
-import { fish } from '$lib/data/profession/fisherman/item/Fish';
+import { fish } from '$lib/data/profession/fisher/item/Fish';
 
 export class ItemRepository {
 	// TODO(@Isha): Grab these from profession maybe?
 	public static items: Item[] = [
-		// Fisherman
+		// Fisher
 		...fish,
 
 		// Woodcutter

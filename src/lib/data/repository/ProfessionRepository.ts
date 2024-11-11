@@ -3,7 +3,7 @@ import type { ProfessionId } from '$lib/data/game/ProfessionId';
 import { leatherworker } from '$lib/data/profession/leatherworker/Leatherworker';
 import { armorer } from '$lib/data/profession/armorer/Armorer';
 import { merchant } from '$lib/data/profession/merchant/Merchant';
-import { fisherman } from '$lib/data/profession/fisherman/Fisherman';
+import { fisher } from '$lib/data/profession/fisher/Fisher';
 import { gatherer } from '$lib/data/profession/gatherer/Gatherer';
 import { alchemist } from '$lib/data/profession/alchemist/Alchemist';
 import { scout } from '$lib/data/profession/scout/Scout';
@@ -15,7 +15,7 @@ import { bonewright } from '$lib/data/profession/bonewright/Bonewright';
 import { miner } from '$lib/data/profession/miner/Miner';
 import { blacksmith } from '$lib/data/profession/blacksmith/Blacksmith';
 import { stonemason } from '$lib/data/profession/stonemason/Stonemason';
-import { watchman } from '$lib/data/profession/watchman/Watchman';
+import { watchperson } from '$lib/data/profession/watchperson/Watchperson';
 import { detective } from '$lib/data/profession/detective/Detective';
 import { chef } from '$lib/data/profession/chef/Chef';
 import { guard } from '$lib/data/profession/guard/Guard';
@@ -24,7 +24,7 @@ export class ProfessionRepository {
 	public static professions: Profession[] = [
 		guard,
 		chef,
-		fisherman,
+		fisher,
 		gatherer,
 		alchemist,
 
@@ -39,7 +39,7 @@ export class ProfessionRepository {
 		blacksmith,
 		stonemason,
 
-		watchman,
+		watchperson,
 		detective,
 		leatherworker,
 		merchant,

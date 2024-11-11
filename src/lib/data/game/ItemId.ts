@@ -1,5 +1,5 @@
 export enum ItemId {
-	/** Fisherman **/
+	/** Fisher **/
 	// Active Fish
 	MottledFlounder,
 	LesserEel,

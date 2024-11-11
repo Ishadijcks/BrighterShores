@@ -1,12 +1,18 @@
 <script lang="ts">
 	import { ProfessionRepository } from '$lib/data/repository/ProfessionRepository';
 	import ProfessionIcon from '$lib/components/ProfessionIcon.svelte';
-	import { state } from '$lib/state/State.svelte';
+
 	import { EpisodeRepository } from '$lib/data/repository/EpisodeRepository';
 	import { getLevel } from '$lib/model/profession/LevelData';
 	import EpisodeIcon from '$lib/components/EpisodeIcon.svelte';
 
+	import { getContext } from 'svelte';
+	import type { LocalStore } from '$lib/util/LocalStore.svelte';
+	import type { State } from '$lib/state/State';
+
+	const state = getContext<LocalStore<State>>('state')?.value;
 	const episodes = $derived(EpisodeRepository.episodes);
+
 </script>
 
 <div class="flex flex-col space-y-8">

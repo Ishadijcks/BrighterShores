@@ -9,7 +9,7 @@ export const hopeport: Episode = {
 	professions: [
 		ProfessionId.Guard,
 		ProfessionId.Chef,
-		ProfessionId.Fisherman,
+		ProfessionId.Fisher,
 		ProfessionId.Gatherer,
 		ProfessionId.Alchemist,
 	],

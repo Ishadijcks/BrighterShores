@@ -2,7 +2,7 @@ import { ItemId } from '$lib/data/game/ItemId';
 import { ToolType } from '$lib/data/tool/ToolType';
 import type { Action } from '$lib/model/profession/Action';
 import { ProfessionId } from '$lib/data/game/ProfessionId';
-import { fish } from '$lib/data/profession/fisherman/item/Fish';
+import { fish } from '$lib/data/profession/fisher/item/Fish';
 
 export interface FishingAction {
 	fish: ItemId;
@@ -68,13 +68,13 @@ export const activeFishingActions: Action[] = rawActiveFishingActions.map((a) =>
 	return {
 		input: [],
 		output: [{ id: a.fish, amount: 1 }],
-		experience: [{ profession: ProfessionId.Fisherman, amount: a.exp }],
+		experience: [{ profession: ProfessionId.Fisher, amount: a.exp }],
 		requirements: [
 			{
-				profession: ProfessionId.Fisherman,
+				profession: ProfessionId.Fisher,
 				level:
 					// Grab the level from the corresponding fish
-					fish.find((f) => f.id === a.fish)?.professions.find((p) => p.profession === ProfessionId.Fisherman)?.level ??
+					fish.find((f) => f.id === a.fish)?.professions.find((p) => p.profession === ProfessionId.Fisher)?.level ??
 					Infinity,
 			},
 		],

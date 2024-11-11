@@ -2,7 +2,7 @@ import { ToolType } from '$lib/data/tool/ToolType';
 import type { Tool } from '$lib/model/tool/Tool';
 import { ProfessionId } from '$lib/data/game/ProfessionId';
 
-export interface FishermanTool {
+export interface FisherTool {
 	type: ToolType;
 	name: string;
 	description: string;
@@ -12,7 +12,7 @@ export interface FishermanTool {
 }
 
 // prettier-ignore
-const rawFishermanTools: FishermanTool[] = [
+const rawFisherTools: FisherTool[] = [
 	{type: ToolType.FishingSpear, name: "Fishing Spear (1)", description: 'A crude but effective way to fish', tier: 1, level: 0, cost: 12000 },
 	{type: ToolType.FishingSpear, name: "Fishing Spear (2)", description: 'A crude but effective way to fish', tier: 2, level: 15, cost: 126000},
 	{type: ToolType.FishingRod, name: "Fishing Rod (1)", description: 'Not much more than a stick and a piece of string', tier: 1, level: 20, cost: 72000 },
@@ -34,9 +34,9 @@ const rawFishermanTools: FishermanTool[] = [
 
 ];
 
-export const fishermanTools: Tool[] = rawFishermanTools.map((t) => {
+export const fisherTools: Tool[] = rawFisherTools.map((t) => {
 	return {
 		...t,
-		levelRequirement: [{ profession: ProfessionId.Fisherman, level: t.level }],
+		levelRequirement: [{ profession: ProfessionId.Fisher, level: t.level }],
 	};
 });

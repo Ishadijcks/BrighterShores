@@ -139,6 +139,6 @@ export const fish: Item[] = rawFish.map((fish) => {
 	return {
 		...fish,
 		episodes: [EpisodeId.Hopeport],
-		professions: [{ profession: ProfessionId.Fisherman, level: fish.f }],
+		professions: [{ profession: ProfessionId.Fisher, level: fish.f }],
 	};
 });

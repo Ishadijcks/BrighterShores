@@ -1,7 +1,7 @@
 export enum ProfessionId {
 	Guard,
 	Chef,
-	Fisherman,
+	Fisher,
 	Forager,
 	Alchemist,
 
@@ -16,7 +16,7 @@ export enum ProfessionId {
 	BlackSmith,
 	Stonemason,
 
-	Watchman,
+	Watchperson,
 	Detective,
 	Leatherworker,
 	Merchant,
