@@ -9,7 +9,7 @@ import type { ProfessionId } from '$lib/data/game/ProfessionId';
  * @param actions The list of actions to check
  * @param maxLevel How many levels to calculate
  */
-export const getActionsNeededPerLevel = (
+export const calculateActionsNeededPerLevel = (
 	professionId: ProfessionId,
 	actions: Action[],
 	maxLevel: number = 500,

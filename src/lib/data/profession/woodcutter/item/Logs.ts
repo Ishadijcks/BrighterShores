@@ -2,7 +2,7 @@ import type { Item } from '$lib/model/item/Item';
 import { ItemId } from '$lib/data/game/ItemId';
 import { ProfessionId } from '$lib/data/game/ProfessionId';
 import { EpisodeId } from '$lib/data/game/EpisodeId';
-import { ShopId } from '$lib/model/shops/ShopId';
+import { ShopId } from '$lib/model/shop/ShopId';
 import { StorageType } from '$lib/model/storage/StorageType';
 
 interface Log {

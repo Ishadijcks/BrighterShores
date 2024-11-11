@@ -10,7 +10,7 @@
 
 	let { id }: Props = $props();
 
-	const profession = ProfessionRepository.getProfession(id);
+	const profession = $derived(ProfessionRepository.getProfession(id));
 </script>
 
 <img class="h-4 w-4" src="{base}/images/{profession.icon}" alt={profession.name} />
