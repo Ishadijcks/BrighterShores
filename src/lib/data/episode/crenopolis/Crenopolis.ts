@@ -6,10 +6,5 @@ export const crenopolis: Episode = {
 	id: EpisodeId.Crenopolis,
 	name: 'Crenopolis',
 	icon: 'episode/crenopolis.png',
-	professions: [
-		ProfessionId.Watchman,
-		ProfessionId.Detective,
-		ProfessionId.Leatherworker,
-		ProfessionId.Merchant,
-	],
+	professions: [ProfessionId.Watchman, ProfessionId.Detective, ProfessionId.Leatherworker, ProfessionId.Merchant],
 };

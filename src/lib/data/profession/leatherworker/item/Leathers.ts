@@ -70,8 +70,7 @@ const rawLeathers: Leather[] = [
 
 export const leathers: Item[] = rawLeathers.map((h) => {
 	const leatherWorkerLevel =
-		rawHides.find((hide) => hide.name === h.name.replace('Leather', 'Hide'))?.leatherworkerLevel ??
-		0;
+		rawHides.find((hide) => hide.name === h.name.replace('Leather', 'Hide'))?.leatherworkerLevel ?? 0;
 
 	return {
 		name: h.name,
