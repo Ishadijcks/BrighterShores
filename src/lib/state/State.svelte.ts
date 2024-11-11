@@ -4,7 +4,7 @@ export interface State {
 	profession: Record<ProfessionId, number>;
 }
 
-export const state: State = {
+export const state: State = $state({
 	profession: {
 		[ProfessionId.Guard]: 0,
 		[ProfessionId.Chef]: 0,
@@ -30,4 +30,4 @@ export const state: State = {
 
 		[ProfessionId.Armorer]: 0,
 	},
-};
+});

@@ -19,6 +19,7 @@
 	<a class="px-4" href="{base}/episodes">Episodes</a>
 	<a class="px-4" href="{base}/professions">Professions</a>
 	<a class="px-4" href="{base}/items">Items</a>
+	<a class="px-4" href="{base}/player">Player</a>
 </AppBar>
 
 <div class="p-4">
