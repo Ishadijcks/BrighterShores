@@ -10,7 +10,7 @@ interface SawmillAction {
 }
 
 // prettier-ignore
-const rawSawmillActions: SawmillAction[] = [
+export const rawSawmillActions: SawmillAction[] = [
 	{ level: 0, log: ItemId.CoarseAshLog, plank: ItemId.CoarseAshPlank, exp: 56 },
 	{ level: 2, log: ItemId.CoarseOakLog, plank: ItemId.CoarseOakPole, exp: 119 },
 	{ level: 4, log: ItemId.CoarsePineLog, plank: ItemId.CoarsePinePole, exp: 127 },
@@ -26,7 +26,7 @@ const rawSawmillActions: SawmillAction[] = [
 	{ level: 30, log: ItemId.RuggedHickoryLog, plank: ItemId.RuggedHickoryPole, exp: 251 },
 	{ level: 35, log: ItemId.RuggedJuniperLog, plank: ItemId.RuggedJuniperStave, exp: 140 },
 	{ level: 43, log: ItemId.RuggedPoplarLog, plank: ItemId.RuggedPoplarPole, exp: 328 },
-	{ level: 51, log: ItemId.RuggedSuaveLog, plank: ItemId.RuggedSuavePole, exp: 0 },
+	{ level: 51, log: ItemId.RuggedSuaveLog, plank: ItemId.RuggedSuavePole, exp: 383 },
 	{ level: 59, log: ItemId.RuggedYewLog, plank: ItemId.RuggedYewPole, exp: 0 },
 
 	{ level: 67, log: ItemId.AverageAshLog, plank: ItemId.AverageAshPlank, exp: 0 },
