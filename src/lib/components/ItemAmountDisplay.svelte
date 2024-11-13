@@ -1,6 +1,7 @@
 <script lang="ts">
 	import type { ItemAmount } from '$lib/model/item/ItemAmount';
 	import { ItemRepository } from '$lib/data/repository/ItemRepository';
+	import ItemNameDisplay from '$lib/components/ItemNameDisplay.svelte';
 
 	interface Props {
 		itemAmount: ItemAmount;
@@ -11,4 +12,4 @@
 	const item = $derived(ItemRepository.getItem(itemAmount.id));
 </script>
 
-<span>{itemAmount.amount}x {item.fullName}</span>
+<span>{itemAmount.amount}x <ItemNameDisplay {item} /></span>

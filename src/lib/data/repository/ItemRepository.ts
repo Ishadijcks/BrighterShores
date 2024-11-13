@@ -6,10 +6,14 @@ import { logs } from '$lib/data/profession/woodcutter/item/Logs';
 import { planks } from '$lib/data/profession/carpenter/item/Planks';
 import { fish } from '$lib/data/profession/fisher/item/Fish';
 import { capes } from '$lib/data/item/capes';
+import { ingredients } from '$lib/data/profession/chef/item/Ingredients';
 
 export class ItemRepository {
 	// TODO(@Isha): Grab these from profession maybe?
 	public static items: Item[] = [
+		// Chef
+		...ingredients,
+
 		// Fisher
 		...fish,
 

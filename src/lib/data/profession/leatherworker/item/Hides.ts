@@ -33,7 +33,6 @@ export const rawHides: Hide[] = [
 	{ id: ItemId.SuperiorBlackCowHide, quality: 'Superior', hide: 'Black Cow Hide', description: 'The main component for some of the best leather in the land', buyValue: 7940, sellValue: 1690, merchantLevel: 222, leatherworkerLevel: 196 },
 	{ id: ItemId.PerfectBlackCowHide, quality: 'Perfect', hide: 'Black Cow Hide', description: 'So pristine it\'s almost a shame to tan it', buyValue: 16400, sellValue: 2700, merchantLevel: 367, leatherworkerLevel: 380 },
 
-
 	{ id: ItemId.BasicBrownCowHide, quality: 'Basic', hide: 'Brown Cow Hide', description: 'Cows aren\'t very good at hiding', buyValue: 1030, sellValue: 371, merchantLevel: 33, leatherworkerLevel: 8 },
 	{ id: ItemId.ModerateBrownCowHide, quality: 'Moderate', hide: 'Brown Cow Hide', description: 'Slightly better quality hide', buyValue: 2170, sellValue: 679, merchantLevel: 77, leatherworkerLevel: 35 },
 	{ id: ItemId.FineBrownCowHide, quality: 'Fine', hide: 'Brown Cow Hide', description: 'This hide will make some pretty fine leather', buyValue: 3670, sellValue: 994, merchantLevel: 122, leatherworkerLevel: 94 },

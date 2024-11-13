@@ -1,1 +1,1 @@
-<p>TODO</p>
+<p>Select a shop</p>

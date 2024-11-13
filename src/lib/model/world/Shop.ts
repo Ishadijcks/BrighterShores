@@ -4,6 +4,7 @@ import type { ItemId } from '$lib/data/game/ItemId';
 
 export interface Shop {
 	id: ShopId;
+	name: string;
 	owner: NpcId;
 
 	items: Record<string, ItemId[]>;

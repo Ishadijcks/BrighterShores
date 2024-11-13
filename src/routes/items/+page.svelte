@@ -6,6 +6,7 @@
 	import { canUseItem, type State } from '$lib/state/State';
 	import { getContext } from 'svelte';
 	import type { LocalStore } from '$lib/util/LocalStore.svelte';
+	import ItemNameDisplay from '$lib/components/ItemNameDisplay.svelte';
 
 	const items = $derived(ItemRepository.items);
 
@@ -29,12 +30,7 @@
 				{@const canUse = canUseItem(state, item)}
 				<tr class={canUse ? '' : ''}>
 					<td>
-						{#if item.quality && item.name}
-							<span class="text-primary-900-100">{item.quality}</span>
-							<span>{item.name}</span>
-						{:else}
-							<span>{item.fullName}</span>
-						{/if}
+						<ItemNameDisplay {item}></ItemNameDisplay>
 					</td>
 					<td>{item.description}</td>
 					<td>

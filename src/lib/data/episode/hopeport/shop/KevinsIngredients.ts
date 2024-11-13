@@ -1,0 +1,81 @@
+import type { Shop } from '$lib/model/world/Shop';
+import { ShopId } from '$lib/data/world/ShopId';
+import { NpcId } from '$lib/data/world/NpcId';
+import { ItemId } from '$lib/data/game/ItemId';
+
+export const kevinsIngredients: Shop = {
+	id: ShopId.KevinsIngredients,
+	name: "Kevin's Ingredients",
+	owner: NpcId.Kevin,
+	items: {
+		Assorted: [
+			ItemId.Bread,
+			ItemId.Butter,
+			ItemId.Cabbage,
+			ItemId.RawChicken,
+			ItemId.Cream,
+			ItemId.Gelatin,
+			ItemId.LemonJuice,
+			ItemId.Pastry,
+			ItemId.RawSausages,
+			ItemId.SoySauce,
+			ItemId.Stock,
+			ItemId.Wine,
+		],
+		Bacon: [
+			ItemId.BasicRawBacon,
+			ItemId.AppetizingRawBacon,
+			ItemId.FineRawBacon,
+			ItemId.TastyRawBacon,
+			ItemId.DeliciousRawBacon,
+			ItemId.GourmetRawBacon,
+		],
+		Beetroot: [
+			ItemId.GolbranthBeetroot,
+			ItemId.TarangBeetroot,
+			ItemId.KalbBeetroot,
+			ItemId.FlexhairBeetroot,
+			ItemId.ZingBeetroot,
+			ItemId.OldclayBeetroot,
+			ItemId.FurtopBeetroot,
+			ItemId.OlgraveBeetroot,
+			ItemId.VolbarnBeetroot,
+			ItemId.JamatoBeetroot,
+		],
+		Eggs: [ItemId.BasicEggs, ItemId.AppetizingEggs, ItemId.TastyEggs, ItemId.DeliciousEggs, ItemId.GourmetEggs],
+		Garlic: [
+			ItemId.DeepsideGarlic,
+			ItemId.FireveinGarlic,
+			ItemId.LangardGarlic,
+			ItemId.ShelkramGarlic,
+			ItemId.GrottoGarlic,
+			ItemId.AmberfleshGarlic,
+			ItemId.WeldbulbGarlic,
+		],
+		Leek: [
+			ItemId.ValentLeek,
+			ItemId.BandedLeek,
+			ItemId.PineshadeLeek,
+			ItemId.GlintLeek,
+			ItemId.WondrousLeek,
+			ItemId.GoldenLeek,
+		],
+		'Mixed Vegetables': [
+			ItemId.BasicMixedVegetables,
+			ItemId.AppetizingMixedVegetables,
+			ItemId.FineMixedVegetables,
+			ItemId.TastyMixedVegetables,
+			ItemId.DeliciousMixedVegetables,
+			ItemId.GourmetMixedVegetables,
+		],
+		Potato: [
+			ItemId.PiperPotato,
+			ItemId.KingPhelwanPotato,
+			ItemId.CalystraPotato,
+			ItemId.ColawanPotato,
+			ItemId.BitterbidePotato,
+			ItemId.GreengrailPotato,
+			ItemId.GalimeerPotato,
+		],
+	},
+};
