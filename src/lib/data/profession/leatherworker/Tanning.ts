@@ -45,7 +45,7 @@ const rawTanningActions: TanningAction[] = [
 	{ level: 153, hide: ItemId.StrongBrownCowHide, leather: ItemId.StrongBrownCowLeather, exp: 2259 },
 	{ level: 159, hide: ItemId.StrongBisonHide, leather: ItemId.StrongBisonLeather, exp: 3023 },
 	{ level: 168, hide: ItemId.StrongBuffaloHide, leather: ItemId.StrongBuffaloLeather, exp: 3065 },
-	{ level: 175, hide: ItemId.StrongHalebeastHide, leather: ItemId.StrongHalebeastLeather, exp: 0 },
+	{ level: 175, hide: ItemId.StrongHalebeastHide, leather: ItemId.StrongHalebeastLeather, exp: 4498 },
 
 	{ level: 181, hide: ItemId.SuperiorWhiteCowHide, leather: ItemId.SuperiorWhiteCowLeather, exp: 0 },
 	{ level: 190, hide: ItemId.SuperiorDeerHide, leather: ItemId.SuperiorDeerLeather, exp: 0 },

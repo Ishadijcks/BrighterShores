@@ -25,11 +25,11 @@ export class ProfessionRepository {
 		guard,
 		chef,
 		fisher,
-		gatherer,
+		forager,
 		alchemist,
 
 		scout,
-		forager,
+		gatherer,
 		woodcutter,
 		carpenter,
 

@@ -31,7 +31,6 @@
 				<!--	<th>Profit</th>-->
 				<!--{/if}-->
 				<th>Action</th>
-				<th>Category</th>
 				<th>Experience</th>
 				<th>Knowledge</th>
 			</tr>
@@ -42,8 +41,7 @@
 					<td>
 						<LevelRequirementDisplay req={action.lvl} />
 					</td>
-					<td>{action.activity}</td>
-					<td>{action.category}</td>
+					<td>{action.category} {action.activity}</td>
 					<!--{#if hasInput}-->
 					<!--	<td>-->
 					<!--		<ItemAmountsDisplay items={action.input} />-->

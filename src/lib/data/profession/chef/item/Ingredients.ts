@@ -73,14 +73,6 @@ const rawIngredients: Ingredient[] = [
 	{ id: ItemId.TastyMixedVegetables, quality: 'Tasty', name: 'Mixed Vegetables', description: '', buy: 1400, sell: 466, lvl: 120 },
 	{ id: ItemId.DeliciousMixedVegetables, quality: 'Delicious', name: 'Mixed Vegetables', description: '', buy: 2370, sell: 790, lvl: 217},
 	{ id: ItemId.GourmetMixedVegetables, quality: 'Gourmet', name: 'Mixed Vegetables', description: '', buy: 4580, sell: 1520, lvl: 438 },
-
-	{ id: ItemId.PiperPotato, quality: 'Piper', name: 'Potato', description: '', buy: 700, sell: 280, lvl: 6 },
-	{ id: ItemId.KingPhelwanPotato, quality: 'King', name: 'Phelwan Potato', description: '', buy: 1540, sell: 550, lvl: 18 },
-	{ id: ItemId.CalystraPotato, quality: 'Calystra', name: 'Potato', description: '', buy: 3590, sell: 190, lvl: 76 },
-	{ id: ItemId.ColawanPotato, quality: 'Colawan', name: 'Potato', description: '', buy: 5960, sell: 1570, lvl: 125 },
-	{ id: ItemId.BitterbidePotato, quality: 'Bitterbide', name: 'Potato', description: '', buy: 9280, sell: 2110, lvl: 157 },
-	{ id: ItemId.GreengrailPotato, quality: 'Greengrail', name: 'Potato', description: '', buy: 19400, sell: 3410, lvl: 336 },
-	{ id: ItemId.GalimeerPotato, quality: 'Galimeer', name: 'Potato', description: '', buy: 30800, sell: 4530, lvl: 464 },
 ];
 
 export const ingredients: Item[] = rawIngredients.map((i) => {

@@ -1,10 +1,12 @@
 import type { Profession } from '$lib/model/profession/Profession';
 import { ProfessionId } from '$lib/data/game/ProfessionId';
+import { foragingActions } from '$lib/data/profession/forager/Foraging';
+import { foragerPassiveActions } from '$lib/data/profession/forager/ForagerPassiveActions';
 
 export const forager: Profession = {
 	id: ProfessionId.Forager,
 	name: 'Forager',
 	icon: 'profession/forager.png',
-	actions: [],
-	passives: [],
+	actions: [...foragingActions],
+	passives: [...foragerPassiveActions],
 };

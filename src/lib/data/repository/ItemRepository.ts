@@ -5,9 +5,11 @@ import type { ItemId } from '$lib/data/game/ItemId';
 import { logs } from '$lib/data/profession/woodcutter/item/Logs';
 import { planks } from '$lib/data/profession/carpenter/item/Planks';
 import { fish } from '$lib/data/profession/fisher/item/Fish';
-import { capes } from '$lib/data/item/capes';
+import { capes } from '$lib/data/item/Capes';
 import { ingredients } from '$lib/data/profession/chef/item/Ingredients';
 import { dishes } from '$lib/data/profession/chef/item/Dishes';
+import { foragees } from '$lib/data/profession/forager/items/Foragees';
+import { passiveForagees } from '$lib/data/profession/forager/items/ForageePassives';
 
 export class ItemRepository {
 	// TODO(@Isha): Grab these from profession maybe?
@@ -18,6 +20,10 @@ export class ItemRepository {
 
 		// Fisher
 		...fish,
+
+		// Forager
+		...foragees,
+		...passiveForagees,
 
 		// Woodcutter
 		...logs,
