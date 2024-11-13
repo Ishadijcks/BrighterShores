@@ -104,6 +104,8 @@ const rawDishes: Food[] = [
 export const dishes: Item[] = rawDishes.map((dish) => {
 	return {
 		...dish,
+		quality: dish.quality,
+		name: dish.dish,
 		fullName: `${dish.quality} ${dish.dish}`,
 		professions: [
 			{ profession: ProfessionId.Chef, level: rawCookingRecipes.find((r) => r.dish === dish.id)?.lvl ?? Infinity },
