@@ -64,6 +64,6 @@
 	});
 </script>
 
-<div class="h-96">
-	<canvas bind:this={canvas}></canvas>
+<div>
+	<canvas class="h-96" bind:this={canvas}></canvas>
 </div>

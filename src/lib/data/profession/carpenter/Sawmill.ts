@@ -19,6 +19,7 @@ const rawSawmillActions: SawmillAction[] = [
 	{ level: 10, log: ItemId.CoarsePoplarLog, plank: ItemId.CoarsePoplarPole, exp: 151 },
 	{ level: 12, log: ItemId.CoarseSuaveLog, plank: ItemId.CoarseSuavePole, exp: 159 },
 	{ level: 14, log: ItemId.CoarseYewLog, plank: ItemId.CoarseYewPole, exp: 168 },
+
 	{ level: 16, log: ItemId.RuggedAshLog, plank: ItemId.RuggedAshPlank, exp: 89 },
 	{ level: 18, log: ItemId.RuggedOakLog, plank: ItemId.RuggedOakPole, exp: 188 },
 	{ level: 22, log: ItemId.RuggedPineLog, plank: ItemId.RuggedPinePole, exp: 219 },
@@ -27,6 +28,7 @@ const rawSawmillActions: SawmillAction[] = [
 	{ level: 43, log: ItemId.RuggedPoplarLog, plank: ItemId.RuggedPoplarPole, exp: 328 },
 	{ level: 51, log: ItemId.RuggedSuaveLog, plank: ItemId.RuggedSuavePole, exp: 0 },
 	{ level: 59, log: ItemId.RuggedYewLog, plank: ItemId.RuggedYewPole, exp: 0 },
+
 	{ level: 67, log: ItemId.AverageAshLog, plank: ItemId.AverageAshPlank, exp: 0 },
 	{ level: 72, log: ItemId.AverageOakLog, plank: ItemId.AverageOakPole, exp: 0 },
 	{ level: 80, log: ItemId.AveragePineLog, plank: ItemId.AveragePinePole, exp: 0 },
@@ -35,6 +37,7 @@ const rawSawmillActions: SawmillAction[] = [
 	{ level: 104, log: ItemId.AveragePoplarLog, plank: ItemId.AveragePoplarPole, exp: 0 },
 	{ level: 110, log: ItemId.AverageSuaveLog, plank: ItemId.AverageSuavePole, exp: 0 },
 	{ level: 117, log: ItemId.AverageYewLog, plank: ItemId.AverageYewPole, exp: 0 },
+
 	{ level: 125, log: ItemId.FineAshLog, plank: ItemId.FineAshPlank, exp: 0 },
 	{ level: 133, log: ItemId.FineOakLog, plank: ItemId.FineOakPole, exp: 0 },
 	{ level: 139, log: ItemId.FinePineLog, plank: ItemId.FinePinePole, exp: 0 },
@@ -43,6 +46,7 @@ const rawSawmillActions: SawmillAction[] = [
 	{ level: 162, log: ItemId.FinePoplarLog, plank: ItemId.FinePoplarPole, exp: 0 },
 	{ level: 170, log: ItemId.FineSuaveLog, plank: ItemId.FineSuavePole, exp: 0 },
 	{ level: 176, log: ItemId.FineYewLog, plank: ItemId.FineYewPole, exp: 0 },
+
 	{ level: 184, log: ItemId.SturdyAshLog, plank: ItemId.SturdyAshPlank, exp: 0 },
 	{ level: 192, log: ItemId.SturdyOakLog, plank: ItemId.SturdyOakPole, exp: 0 },
 	{ level: 200, log: ItemId.SturdyPineLog, plank: ItemId.SturdyPinePole, exp: 0 },
@@ -51,6 +55,7 @@ const rawSawmillActions: SawmillAction[] = [
 	{ level: 266, log: ItemId.SturdyPoplarLog, plank: ItemId.SturdyPoplarPole, exp: 0 },
 	{ level: 291, log: ItemId.SturdySuaveLog, plank: ItemId.SturdySuavePole, exp: 0 },
 	{ level: 315, log: ItemId.SturdyYewLog, plank: ItemId.SturdyYewPole, exp: 0 },
+
 	{ level: 332, log: ItemId.PerfectAshLog, plank: ItemId.PerfectAshPlank, exp: 0 },
 	{ level: 357, log: ItemId.PerfectOakLog, plank: ItemId.PerfectOakPole, exp: 0 },
 	{ level: 382, log: ItemId.PerfectPineLog, plank: ItemId.PerfectPinePole, exp: 0 },

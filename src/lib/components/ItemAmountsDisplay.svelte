@@ -9,6 +9,8 @@
 	let { items }: Props = $props();
 </script>
 
-{#each items as item}
-	<ItemAmountDisplay itemAmount={item} />
-{/each}
+<div class="flex flex-col">
+	{#each items as item}
+		<ItemAmountDisplay itemAmount={item} />
+	{/each}
+</div>

@@ -1,5 +1,5 @@
 <script>
-	import ProfessionInput from '$lib/components/ProfessionInput.svelte';
+	import ProfessionInputTable from '$lib/components/state/ProfessionInputTable.svelte';
 </script>
 
-<ProfessionInput></ProfessionInput>
+<ProfessionInputTable></ProfessionInputTable>

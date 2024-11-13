@@ -62,7 +62,7 @@
 					</td>
 					{#if hasInput && hasOutput}
 						<td>
-							<CurrencyDisplay amount={calculateProfit(action)} />
+							<CurrencyDisplay amount={calculateProfit(action)} highlightSign={true} />
 						</td>
 					{/if}
 				</tr>
