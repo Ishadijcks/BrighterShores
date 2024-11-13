@@ -265,12 +265,13 @@ export enum ItemId {
 
 	// Venture Fish
 	OrangeLobster,
-	BeachOyster,
 	StripedLobster,
-	SignalOyster,
 	GhostLobster,
-	SpeckledOyster,
 	CunningLobster,
+
+	BeachOyster,
+	SignalOyster,
+	SpeckledOyster,
 	RustyOyster,
 
 	/** Forageer **/
