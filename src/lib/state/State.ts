@@ -1,5 +1,7 @@
 import { ProfessionId } from '$lib/data/game/ProfessionId';
 import { ToolType } from '$lib/data/tool/ToolType';
+import type { Item } from '$lib/model/item/Item';
+import { getLevel } from '$lib/model/profession/LevelData';
 
 export interface State {
 	profession: Record<ProfessionId, number>;
@@ -24,7 +26,7 @@ export const createDefaultState = (): State => {
 			[ProfessionId.Minefighter]: 0,
 			[ProfessionId.Bonewright]: 0,
 			[ProfessionId.Miner]: 0,
-			[ProfessionId.BlackSmith]: 0,
+			[ProfessionId.Blacksmith]: 0,
 			[ProfessionId.Stonemason]: 0,
 
 			[ProfessionId.Watchperson]: 0,
@@ -61,4 +63,8 @@ export const createDefaultState = (): State => {
 			},
 		},
 	};
+};
+
+export const canUseItem = (state: State, item: Item): boolean => {
+	return item.professions.every((p) => getLevel(state.profession[p.profession]) >= p.level);
 };

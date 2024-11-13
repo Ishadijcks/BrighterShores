@@ -3,4 +3,6 @@ export enum StorageType {
 	TimberBank,
 	HidesBank,
 	LeathersBank,
+
+	CapesBank,
 }

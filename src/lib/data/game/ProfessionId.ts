@@ -13,7 +13,7 @@ export enum ProfessionId {
 	Minefighter,
 	Bonewright,
 	Miner,
-	BlackSmith,
+	Blacksmith,
 	Stonemason,
 
 	Watchperson,

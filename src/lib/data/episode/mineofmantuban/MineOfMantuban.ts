@@ -10,7 +10,7 @@ export const mineOfMantuban: Episode = {
 		ProfessionId.Minefighter,
 		ProfessionId.Bonewright,
 		ProfessionId.Miner,
-		ProfessionId.BlackSmith,
+		ProfessionId.Blacksmith,
 		ProfessionId.Stonemason,
 	],
 };

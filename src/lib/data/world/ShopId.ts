@@ -3,4 +3,6 @@ export enum ShopId {
 	TimberMerchant,
 	HideStall,
 	LeatherStall,
+
+	CapeShop,
 }
