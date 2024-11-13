@@ -1,6 +1,7 @@
 import type { Item } from '$lib/model/item/Item';
 import { ItemId } from '$lib/data/game/ItemId';
 import { ProfessionId } from '$lib/data/game/ProfessionId';
+import { EpisodeId } from '$lib/data/game/EpisodeId';
 
 export const capes: Item[] = [
 	{
@@ -12,6 +13,7 @@ export const capes: Item[] = [
 		sellValue: 168000,
 		description: `Cape which can only be worn by a level 50 Guard`,
 		professions: [{ profession: ProfessionId.Guard, level: 50 }],
+		episodes: [EpisodeId.Hopeport],
 	},
 	{
 		id: ItemId.AdeptGuardCape,
@@ -22,6 +24,7 @@ export const capes: Item[] = [
 		sellValue: 430000,
 		description: `Cape which can only be worn by a level 100 Guard`,
 		professions: [{ profession: ProfessionId.Guard, level: 100 }],
+		episodes: [EpisodeId.Hopeport],
 	},
 	{
 		id: ItemId.ExpertGuardCape,
@@ -32,6 +35,7 @@ export const capes: Item[] = [
 		sellValue: 1050000,
 		description: `Cape which can only be worn by a level 200 Guard`,
 		professions: [{ profession: ProfessionId.Guard, level: 200 }],
+		episodes: [EpisodeId.Hopeport],
 	},
 	{
 		id: ItemId.UltimateGuardCape,
@@ -42,6 +46,7 @@ export const capes: Item[] = [
 		sellValue: 3120000,
 		description: `Cape which can only be worn by a level 500 Guard`,
 		professions: [{ profession: ProfessionId.Guard, level: 500 }],
+		episodes: [EpisodeId.Hopeport],
 	},
 	{
 		id: ItemId.JourneymanChefCape,
@@ -52,6 +57,7 @@ export const capes: Item[] = [
 		sellValue: 168000,
 		description: `Cape which can only be worn by a level 50 Chef`,
 		professions: [{ profession: ProfessionId.Chef, level: 50 }],
+		episodes: [EpisodeId.Hopeport],
 	},
 	{
 		id: ItemId.AdeptChefCape,
@@ -62,6 +68,7 @@ export const capes: Item[] = [
 		sellValue: 430000,
 		description: `Cape which can only be worn by a level 100 Chef`,
 		professions: [{ profession: ProfessionId.Chef, level: 100 }],
+		episodes: [EpisodeId.Hopeport],
 	},
 	{
 		id: ItemId.ExpertChefCape,
@@ -72,6 +79,7 @@ export const capes: Item[] = [
 		sellValue: 1050000,
 		description: `Cape which can only be worn by a level 200 Chef`,
 		professions: [{ profession: ProfessionId.Chef, level: 200 }],
+		episodes: [EpisodeId.Hopeport],
 	},
 	{
 		id: ItemId.UltimateChefCape,
@@ -82,6 +90,7 @@ export const capes: Item[] = [
 		sellValue: 3120000,
 		description: `Cape which can only be worn by a level 500 Chef`,
 		professions: [{ profession: ProfessionId.Chef, level: 500 }],
+		episodes: [EpisodeId.Hopeport],
 	},
 	{
 		id: ItemId.JourneymanFisherCape,
@@ -92,6 +101,7 @@ export const capes: Item[] = [
 		sellValue: 168000,
 		description: `Cape which can only be worn by a level 50 Fisher`,
 		professions: [{ profession: ProfessionId.Fisher, level: 50 }],
+		episodes: [EpisodeId.Hopeport],
 	},
 	{
 		id: ItemId.AdeptFisherCape,
@@ -102,6 +112,7 @@ export const capes: Item[] = [
 		sellValue: 430000,
 		description: `Cape which can only be worn by a level 100 Fisher`,
 		professions: [{ profession: ProfessionId.Fisher, level: 100 }],
+		episodes: [EpisodeId.Hopeport],
 	},
 	{
 		id: ItemId.ExpertFisherCape,
@@ -112,6 +123,7 @@ export const capes: Item[] = [
 		sellValue: 1050000,
 		description: `Cape which can only be worn by a level 200 Fisher`,
 		professions: [{ profession: ProfessionId.Fisher, level: 200 }],
+		episodes: [EpisodeId.Hopeport],
 	},
 	{
 		id: ItemId.UltimateFisherCape,
@@ -122,6 +134,7 @@ export const capes: Item[] = [
 		sellValue: 3120000,
 		description: `Cape which can only be worn by a level 500 Fisher`,
 		professions: [{ profession: ProfessionId.Fisher, level: 500 }],
+		episodes: [EpisodeId.Hopeport],
 	},
 	{
 		id: ItemId.JourneymanGathererCape,
@@ -132,6 +145,7 @@ export const capes: Item[] = [
 		sellValue: 168000,
 		description: `Cape which can only be worn by a level 50 Gatherer`,
 		professions: [{ profession: ProfessionId.Gatherer, level: 50 }],
+		episodes: [EpisodeId.Hopeport],
 	},
 	{
 		id: ItemId.AdeptGathererCape,
@@ -142,6 +156,7 @@ export const capes: Item[] = [
 		sellValue: 430000,
 		description: `Cape which can only be worn by a level 100 Gatherer`,
 		professions: [{ profession: ProfessionId.Gatherer, level: 100 }],
+		episodes: [EpisodeId.Hopeport],
 	},
 	{
 		id: ItemId.ExpertGathererCape,
@@ -152,6 +167,7 @@ export const capes: Item[] = [
 		sellValue: 1050000,
 		description: `Cape which can only be worn by a level 200 Gatherer`,
 		professions: [{ profession: ProfessionId.Gatherer, level: 200 }],
+		episodes: [EpisodeId.Hopeport],
 	},
 	{
 		id: ItemId.UltimateGathererCape,
@@ -162,6 +178,7 @@ export const capes: Item[] = [
 		sellValue: 3120000,
 		description: `Cape which can only be worn by a level 500 Gatherer`,
 		professions: [{ profession: ProfessionId.Gatherer, level: 500 }],
+		episodes: [EpisodeId.Hopeport],
 	},
 	{
 		id: ItemId.JourneymanAlchemistCape,
@@ -172,6 +189,7 @@ export const capes: Item[] = [
 		sellValue: 168000,
 		description: `Cape which can only be worn by a level 50 Alchemist`,
 		professions: [{ profession: ProfessionId.Alchemist, level: 50 }],
+		episodes: [EpisodeId.Hopeport],
 	},
 	{
 		id: ItemId.AdeptAlchemistCape,
@@ -182,6 +200,7 @@ export const capes: Item[] = [
 		sellValue: 430000,
 		description: `Cape which can only be worn by a level 100 Alchemist`,
 		professions: [{ profession: ProfessionId.Alchemist, level: 100 }],
+		episodes: [EpisodeId.Hopeport],
 	},
 	{
 		id: ItemId.ExpertAlchemistCape,
@@ -192,6 +211,7 @@ export const capes: Item[] = [
 		sellValue: 1050000,
 		description: `Cape which can only be worn by a level 200 Alchemist`,
 		professions: [{ profession: ProfessionId.Alchemist, level: 200 }],
+		episodes: [EpisodeId.Hopeport],
 	},
 	{
 		id: ItemId.UltimateAlchemistCape,
@@ -202,6 +222,7 @@ export const capes: Item[] = [
 		sellValue: 3120000,
 		description: `Cape which can only be worn by a level 500 Alchemist`,
 		professions: [{ profession: ProfessionId.Alchemist, level: 500 }],
+		episodes: [EpisodeId.Hopeport],
 	},
 	{
 		id: ItemId.JourneymanScoutCape,
@@ -212,6 +233,7 @@ export const capes: Item[] = [
 		sellValue: 168000,
 		description: `Cape which can only be worn by a level 50 Scout`,
 		professions: [{ profession: ProfessionId.Scout, level: 50 }],
+		episodes: [EpisodeId.Hopeforest],
 	},
 	{
 		id: ItemId.AdeptScoutCape,
@@ -222,6 +244,7 @@ export const capes: Item[] = [
 		sellValue: 430000,
 		description: `Cape which can only be worn by a level 100 Scout`,
 		professions: [{ profession: ProfessionId.Scout, level: 100 }],
+		episodes: [EpisodeId.Hopeforest],
 	},
 	{
 		id: ItemId.ExpertScoutCape,
@@ -232,6 +255,7 @@ export const capes: Item[] = [
 		sellValue: 1050000,
 		description: `Cape which can only be worn by a level 200 Scout`,
 		professions: [{ profession: ProfessionId.Scout, level: 200 }],
+		episodes: [EpisodeId.Hopeforest],
 	},
 	{
 		id: ItemId.UltimateScoutCape,
@@ -242,6 +266,7 @@ export const capes: Item[] = [
 		sellValue: 3120000,
 		description: `Cape which can only be worn by a level 500 Scout`,
 		professions: [{ profession: ProfessionId.Scout, level: 500 }],
+		episodes: [EpisodeId.Hopeforest],
 	},
 	{
 		id: ItemId.JourneymanForagerCape,
@@ -252,6 +277,7 @@ export const capes: Item[] = [
 		sellValue: 168000,
 		description: `Cape which can only be worn by a level 50 Forager`,
 		professions: [{ profession: ProfessionId.Forager, level: 50 }],
+		episodes: [EpisodeId.Hopeforest],
 	},
 	{
 		id: ItemId.AdeptForagerCape,
@@ -262,6 +288,7 @@ export const capes: Item[] = [
 		sellValue: 430000,
 		description: `Cape which can only be worn by a level 100 Forager`,
 		professions: [{ profession: ProfessionId.Forager, level: 100 }],
+		episodes: [EpisodeId.Hopeforest],
 	},
 	{
 		id: ItemId.ExpertForagerCape,
@@ -272,6 +299,7 @@ export const capes: Item[] = [
 		sellValue: 1050000,
 		description: `Cape which can only be worn by a level 200 Forager`,
 		professions: [{ profession: ProfessionId.Forager, level: 200 }],
+		episodes: [EpisodeId.Hopeforest],
 	},
 	{
 		id: ItemId.UltimateForagerCape,
@@ -282,6 +310,7 @@ export const capes: Item[] = [
 		sellValue: 3120000,
 		description: `Cape which can only be worn by a level 500 Forager`,
 		professions: [{ profession: ProfessionId.Forager, level: 500 }],
+		episodes: [EpisodeId.Hopeforest],
 	},
 	{
 		id: ItemId.JourneymanWoodcutterCape,
@@ -292,6 +321,7 @@ export const capes: Item[] = [
 		sellValue: 168000,
 		description: `Cape which can only be worn by a level 50 Woodcutter`,
 		professions: [{ profession: ProfessionId.Woodcutter, level: 50 }],
+		episodes: [EpisodeId.Hopeforest],
 	},
 	{
 		id: ItemId.AdeptWoodcutterCape,
@@ -302,6 +332,7 @@ export const capes: Item[] = [
 		sellValue: 430000,
 		description: `Cape which can only be worn by a level 100 Woodcutter`,
 		professions: [{ profession: ProfessionId.Woodcutter, level: 100 }],
+		episodes: [EpisodeId.Hopeforest],
 	},
 	{
 		id: ItemId.ExpertWoodcutterCape,
@@ -312,6 +343,7 @@ export const capes: Item[] = [
 		sellValue: 1050000,
 		description: `Cape which can only be worn by a level 200 Woodcutter`,
 		professions: [{ profession: ProfessionId.Woodcutter, level: 200 }],
+		episodes: [EpisodeId.Hopeforest],
 	},
 	{
 		id: ItemId.UltimateWoodcutterCape,
@@ -322,6 +354,7 @@ export const capes: Item[] = [
 		sellValue: 3120000,
 		description: `Cape which can only be worn by a level 500 Woodcutter`,
 		professions: [{ profession: ProfessionId.Woodcutter, level: 500 }],
+		episodes: [EpisodeId.Hopeforest],
 	},
 	{
 		id: ItemId.JourneymanCarpenterCape,
@@ -332,6 +365,7 @@ export const capes: Item[] = [
 		sellValue: 168000,
 		description: `Cape which can only be worn by a level 50 Carpenter`,
 		professions: [{ profession: ProfessionId.Carpenter, level: 50 }],
+		episodes: [EpisodeId.Hopeforest],
 	},
 	{
 		id: ItemId.AdeptCarpenterCape,
@@ -342,6 +376,7 @@ export const capes: Item[] = [
 		sellValue: 430000,
 		description: `Cape which can only be worn by a level 100 Carpenter`,
 		professions: [{ profession: ProfessionId.Carpenter, level: 100 }],
+		episodes: [EpisodeId.Hopeforest],
 	},
 	{
 		id: ItemId.ExpertCarpenterCape,
@@ -352,6 +387,7 @@ export const capes: Item[] = [
 		sellValue: 1050000,
 		description: `Cape which can only be worn by a level 200 Carpenter`,
 		professions: [{ profession: ProfessionId.Carpenter, level: 200 }],
+		episodes: [EpisodeId.Hopeforest],
 	},
 	{
 		id: ItemId.UltimateCarpenterCape,
@@ -362,6 +398,7 @@ export const capes: Item[] = [
 		sellValue: 3120000,
 		description: `Cape which can only be worn by a level 500 Carpenter`,
 		professions: [{ profession: ProfessionId.Carpenter, level: 500 }],
+		episodes: [EpisodeId.Hopeforest],
 	},
 	{
 		id: ItemId.JourneymanMinefighterCape,
@@ -372,6 +409,7 @@ export const capes: Item[] = [
 		sellValue: 168000,
 		description: `Cape which can only be worn by a level 50 Minefighter`,
 		professions: [{ profession: ProfessionId.Minefighter, level: 50 }],
+		episodes: [EpisodeId.MineOfMantuban],
 	},
 	{
 		id: ItemId.AdeptMinefighterCape,
@@ -382,6 +420,7 @@ export const capes: Item[] = [
 		sellValue: 430000,
 		description: `Cape which can only be worn by a level 100 Minefighter`,
 		professions: [{ profession: ProfessionId.Minefighter, level: 100 }],
+		episodes: [EpisodeId.MineOfMantuban],
 	},
 	{
 		id: ItemId.ExpertMinefighterCape,
@@ -392,6 +431,7 @@ export const capes: Item[] = [
 		sellValue: 1050000,
 		description: `Cape which can only be worn by a level 200 Minefighter`,
 		professions: [{ profession: ProfessionId.Minefighter, level: 200 }],
+		episodes: [EpisodeId.MineOfMantuban],
 	},
 	{
 		id: ItemId.UltimateMinefighterCape,
@@ -402,6 +442,7 @@ export const capes: Item[] = [
 		sellValue: 3120000,
 		description: `Cape which can only be worn by a level 500 Minefighter`,
 		professions: [{ profession: ProfessionId.Minefighter, level: 500 }],
+		episodes: [EpisodeId.MineOfMantuban],
 	},
 	{
 		id: ItemId.JourneymanBonewrightCape,
@@ -412,6 +453,7 @@ export const capes: Item[] = [
 		sellValue: 168000,
 		description: `Cape which can only be worn by a level 50 Bonewright`,
 		professions: [{ profession: ProfessionId.Bonewright, level: 50 }],
+		episodes: [EpisodeId.MineOfMantuban],
 	},
 	{
 		id: ItemId.AdeptBonewrightCape,
@@ -422,6 +464,7 @@ export const capes: Item[] = [
 		sellValue: 430000,
 		description: `Cape which can only be worn by a level 100 Bonewright`,
 		professions: [{ profession: ProfessionId.Bonewright, level: 100 }],
+		episodes: [EpisodeId.MineOfMantuban],
 	},
 	{
 		id: ItemId.ExpertBonewrightCape,
@@ -432,6 +475,7 @@ export const capes: Item[] = [
 		sellValue: 1050000,
 		description: `Cape which can only be worn by a level 200 Bonewright`,
 		professions: [{ profession: ProfessionId.Bonewright, level: 200 }],
+		episodes: [EpisodeId.MineOfMantuban],
 	},
 	{
 		id: ItemId.UltimateBonewrightCape,
@@ -442,6 +486,7 @@ export const capes: Item[] = [
 		sellValue: 3120000,
 		description: `Cape which can only be worn by a level 500 Bonewright`,
 		professions: [{ profession: ProfessionId.Bonewright, level: 500 }],
+		episodes: [EpisodeId.MineOfMantuban],
 	},
 	{
 		id: ItemId.JourneymanMinerCape,
@@ -452,6 +497,7 @@ export const capes: Item[] = [
 		sellValue: 168000,
 		description: `Cape which can only be worn by a level 50 Miner`,
 		professions: [{ profession: ProfessionId.Miner, level: 50 }],
+		episodes: [EpisodeId.MineOfMantuban],
 	},
 	{
 		id: ItemId.AdeptMinerCape,
@@ -462,6 +508,7 @@ export const capes: Item[] = [
 		sellValue: 430000,
 		description: `Cape which can only be worn by a level 100 Miner`,
 		professions: [{ profession: ProfessionId.Miner, level: 100 }],
+		episodes: [EpisodeId.MineOfMantuban],
 	},
 	{
 		id: ItemId.ExpertMinerCape,
@@ -472,6 +519,7 @@ export const capes: Item[] = [
 		sellValue: 1050000,
 		description: `Cape which can only be worn by a level 200 Miner`,
 		professions: [{ profession: ProfessionId.Miner, level: 200 }],
+		episodes: [EpisodeId.MineOfMantuban],
 	},
 	{
 		id: ItemId.UltimateMinerCape,
@@ -482,6 +530,7 @@ export const capes: Item[] = [
 		sellValue: 3120000,
 		description: `Cape which can only be worn by a level 500 Miner`,
 		professions: [{ profession: ProfessionId.Miner, level: 500 }],
+		episodes: [EpisodeId.MineOfMantuban],
 	},
 	{
 		id: ItemId.JourneymanBlacksmithCape,
@@ -492,6 +541,7 @@ export const capes: Item[] = [
 		sellValue: 168000,
 		description: `Cape which can only be worn by a level 50 Blacksmith`,
 		professions: [{ profession: ProfessionId.Blacksmith, level: 50 }],
+		episodes: [EpisodeId.MineOfMantuban],
 	},
 	{
 		id: ItemId.AdeptBlacksmithCape,
@@ -502,6 +552,7 @@ export const capes: Item[] = [
 		sellValue: 430000,
 		description: `Cape which can only be worn by a level 100 Blacksmith`,
 		professions: [{ profession: ProfessionId.Blacksmith, level: 100 }],
+		episodes: [EpisodeId.MineOfMantuban],
 	},
 	{
 		id: ItemId.ExpertBlacksmithCape,
@@ -512,6 +563,7 @@ export const capes: Item[] = [
 		sellValue: 1050000,
 		description: `Cape which can only be worn by a level 200 Blacksmith`,
 		professions: [{ profession: ProfessionId.Blacksmith, level: 200 }],
+		episodes: [EpisodeId.MineOfMantuban],
 	},
 	{
 		id: ItemId.UltimateBlacksmithCape,
@@ -522,6 +574,7 @@ export const capes: Item[] = [
 		sellValue: 3120000,
 		description: `Cape which can only be worn by a level 500 Blacksmith`,
 		professions: [{ profession: ProfessionId.Blacksmith, level: 500 }],
+		episodes: [EpisodeId.MineOfMantuban],
 	},
 	{
 		id: ItemId.JourneymanStonemasonCape,
@@ -532,6 +585,7 @@ export const capes: Item[] = [
 		sellValue: 168000,
 		description: `Cape which can only be worn by a level 50 Stonemason`,
 		professions: [{ profession: ProfessionId.Stonemason, level: 50 }],
+		episodes: [EpisodeId.MineOfMantuban],
 	},
 	{
 		id: ItemId.AdeptStonemasonCape,
@@ -542,6 +596,7 @@ export const capes: Item[] = [
 		sellValue: 430000,
 		description: `Cape which can only be worn by a level 100 Stonemason`,
 		professions: [{ profession: ProfessionId.Stonemason, level: 100 }],
+		episodes: [EpisodeId.MineOfMantuban],
 	},
 	{
 		id: ItemId.ExpertStonemasonCape,
@@ -552,6 +607,7 @@ export const capes: Item[] = [
 		sellValue: 1050000,
 		description: `Cape which can only be worn by a level 200 Stonemason`,
 		professions: [{ profession: ProfessionId.Stonemason, level: 200 }],
+		episodes: [EpisodeId.MineOfMantuban],
 	},
 	{
 		id: ItemId.UltimateStonemasonCape,
@@ -562,6 +618,7 @@ export const capes: Item[] = [
 		sellValue: 3120000,
 		description: `Cape which can only be worn by a level 500 Stonemason`,
 		professions: [{ profession: ProfessionId.Stonemason, level: 500 }],
+		episodes: [EpisodeId.MineOfMantuban],
 	},
 	{
 		id: ItemId.JourneymanWatchpersonCape,
@@ -572,6 +629,7 @@ export const capes: Item[] = [
 		sellValue: 168000,
 		description: `Cape which can only be worn by a level 50 Watchperson`,
 		professions: [{ profession: ProfessionId.Watchperson, level: 50 }],
+		episodes: [EpisodeId.Crenopolis],
 	},
 	{
 		id: ItemId.AdeptWatchpersonCape,
@@ -582,6 +640,7 @@ export const capes: Item[] = [
 		sellValue: 430000,
 		description: `Cape which can only be worn by a level 100 Watchperson`,
 		professions: [{ profession: ProfessionId.Watchperson, level: 100 }],
+		episodes: [EpisodeId.Crenopolis],
 	},
 	{
 		id: ItemId.ExpertWatchpersonCape,
@@ -592,6 +651,7 @@ export const capes: Item[] = [
 		sellValue: 1050000,
 		description: `Cape which can only be worn by a level 200 Watchperson`,
 		professions: [{ profession: ProfessionId.Watchperson, level: 200 }],
+		episodes: [EpisodeId.Crenopolis],
 	},
 	{
 		id: ItemId.UltimateWatchpersonCape,
@@ -602,6 +662,7 @@ export const capes: Item[] = [
 		sellValue: 3120000,
 		description: `Cape which can only be worn by a level 500 Watchperson`,
 		professions: [{ profession: ProfessionId.Watchperson, level: 500 }],
+		episodes: [EpisodeId.Crenopolis],
 	},
 	{
 		id: ItemId.JourneymanDetectiveCape,
@@ -612,6 +673,7 @@ export const capes: Item[] = [
 		sellValue: 168000,
 		description: `Cape which can only be worn by a level 50 Detective`,
 		professions: [{ profession: ProfessionId.Detective, level: 50 }],
+		episodes: [EpisodeId.Crenopolis],
 	},
 	{
 		id: ItemId.AdeptDetectiveCape,
@@ -622,6 +684,7 @@ export const capes: Item[] = [
 		sellValue: 430000,
 		description: `Cape which can only be worn by a level 100 Detective`,
 		professions: [{ profession: ProfessionId.Detective, level: 100 }],
+		episodes: [EpisodeId.Crenopolis],
 	},
 	{
 		id: ItemId.ExpertDetectiveCape,
@@ -632,6 +695,7 @@ export const capes: Item[] = [
 		sellValue: 1050000,
 		description: `Cape which can only be worn by a level 200 Detective`,
 		professions: [{ profession: ProfessionId.Detective, level: 200 }],
+		episodes: [EpisodeId.Crenopolis],
 	},
 	{
 		id: ItemId.UltimateDetectiveCape,
@@ -642,6 +706,7 @@ export const capes: Item[] = [
 		sellValue: 3120000,
 		description: `Cape which can only be worn by a level 500 Detective`,
 		professions: [{ profession: ProfessionId.Detective, level: 500 }],
+		episodes: [EpisodeId.Crenopolis],
 	},
 	{
 		id: ItemId.JourneymanLeatherworkerCape,
@@ -652,6 +717,7 @@ export const capes: Item[] = [
 		sellValue: 168000,
 		description: `Cape which can only be worn by a level 50 Leatherworker`,
 		professions: [{ profession: ProfessionId.Leatherworker, level: 50 }],
+		episodes: [EpisodeId.Crenopolis],
 	},
 	{
 		id: ItemId.AdeptLeatherworkerCape,
@@ -662,6 +728,7 @@ export const capes: Item[] = [
 		sellValue: 430000,
 		description: `Cape which can only be worn by a level 100 Leatherworker`,
 		professions: [{ profession: ProfessionId.Leatherworker, level: 100 }],
+		episodes: [EpisodeId.Crenopolis],
 	},
 	{
 		id: ItemId.ExpertLeatherworkerCape,
@@ -672,6 +739,7 @@ export const capes: Item[] = [
 		sellValue: 1050000,
 		description: `Cape which can only be worn by a level 200 Leatherworker`,
 		professions: [{ profession: ProfessionId.Leatherworker, level: 200 }],
+		episodes: [EpisodeId.Crenopolis],
 	},
 	{
 		id: ItemId.UltimateLeatherworkerCape,
@@ -682,6 +750,7 @@ export const capes: Item[] = [
 		sellValue: 3120000,
 		description: `Cape which can only be worn by a level 500 Leatherworker`,
 		professions: [{ profession: ProfessionId.Leatherworker, level: 500 }],
+		episodes: [EpisodeId.Crenopolis],
 	},
 	{
 		id: ItemId.JourneymanMerchantCape,
@@ -692,6 +761,7 @@ export const capes: Item[] = [
 		sellValue: 168000,
 		description: `Cape which can only be worn by a level 50 Merchant`,
 		professions: [{ profession: ProfessionId.Merchant, level: 50 }],
+		episodes: [EpisodeId.Crenopolis],
 	},
 	{
 		id: ItemId.AdeptMerchantCape,
@@ -702,6 +772,7 @@ export const capes: Item[] = [
 		sellValue: 430000,
 		description: `Cape which can only be worn by a level 100 Merchant`,
 		professions: [{ profession: ProfessionId.Merchant, level: 100 }],
+		episodes: [EpisodeId.Crenopolis],
 	},
 	{
 		id: ItemId.ExpertMerchantCape,
@@ -712,6 +783,7 @@ export const capes: Item[] = [
 		sellValue: 1050000,
 		description: `Cape which can only be worn by a level 200 Merchant`,
 		professions: [{ profession: ProfessionId.Merchant, level: 200 }],
+		episodes: [EpisodeId.Crenopolis],
 	},
 	{
 		id: ItemId.UltimateMerchantCape,
@@ -722,6 +794,7 @@ export const capes: Item[] = [
 		sellValue: 3120000,
 		description: `Cape which can only be worn by a level 500 Merchant`,
 		professions: [{ profession: ProfessionId.Merchant, level: 500 }],
+		episodes: [EpisodeId.Crenopolis],
 	},
 	{
 		id: ItemId.JourneymanArmorerCape,
@@ -732,6 +805,7 @@ export const capes: Item[] = [
 		sellValue: 168000,
 		description: `Cape which can only be worn by a level 50 Armorer`,
 		professions: [{ profession: ProfessionId.Armorer, level: 50 }],
+		episodes: [EpisodeId.Crenopolis],
 	},
 	{
 		id: ItemId.AdeptArmorerCape,
@@ -742,6 +816,7 @@ export const capes: Item[] = [
 		sellValue: 430000,
 		description: `Cape which can only be worn by a level 100 Armorer`,
 		professions: [{ profession: ProfessionId.Armorer, level: 100 }],
+		episodes: [EpisodeId.Crenopolis],
 	},
 	{
 		id: ItemId.ExpertArmorerCape,
@@ -752,6 +827,7 @@ export const capes: Item[] = [
 		sellValue: 1050000,
 		description: `Cape which can only be worn by a level 200 Armorer`,
 		professions: [{ profession: ProfessionId.Armorer, level: 200 }],
+		episodes: [EpisodeId.Crenopolis],
 	},
 	{
 		id: ItemId.UltimateArmorerCape,
@@ -762,5 +838,6 @@ export const capes: Item[] = [
 		sellValue: 3120000,
 		description: `Cape which can only be worn by a level 500 Armorer`,
 		professions: [{ profession: ProfessionId.Armorer, level: 500 }],
+		episodes: [EpisodeId.Crenopolis],
 	},
 ];

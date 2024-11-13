@@ -9,7 +9,6 @@
 	let { data }: { data: PageData } = $props();
 
 	const profession: Profession = $derived(data.profession);
-
 </script>
 
 <div class="flex flex-col items-center space-y-8">
