@@ -7,7 +7,6 @@
 
 	let { children } = $props();
 
-
 	import { setContext } from 'svelte';
 	import { localStore } from '$lib/util/LocalStore.svelte';
 	import { createDefaultState } from '$lib/state/State';

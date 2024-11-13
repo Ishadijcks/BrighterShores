@@ -12,7 +12,6 @@
 
 	const state = getContext<LocalStore<State>>('state')?.value;
 	const episodes = $derived(EpisodeRepository.episodes);
-
 </script>
 
 <div class="flex flex-col space-y-8">

@@ -6,7 +6,9 @@ import type { ShopId } from '$lib/model/shop/ShopId';
 
 export interface Item {
 	id: ItemId;
-	name: string;
+	quality?: string;
+	name?: string;
+	fullName: string;
 	episodes: EpisodeId[];
 	professions: LevelRequirement[];
 	buyValue: number;

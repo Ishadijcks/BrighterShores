@@ -20,11 +20,24 @@
 		<tbody class="hover:[&>tr]:preset-tonal-primary">
 			{#each items as item}
 				<tr>
-					<td>{item.name}</td>
+					<td>
+						{#if item.quality && item.name}
+							<span class="text-primary-900-100">{item.quality}</span>
+							<span>{item.name}</span>
+						{:else}
+							<span>{item.fullName}</span>
+						{/if}
+					</td>
 					<td>{item.description}</td>
-					<td><LevelRequirementsDisplay reqs={item.professions} /></td>
-					<td><CurrencyDisplay amount={item.buyValue} /></td>
-					<td><CurrencyDisplay amount={item.sellValue} /></td>
+					<td>
+						<LevelRequirementsDisplay reqs={item.professions} />
+					</td>
+					<td>
+						<CurrencyDisplay amount={item.buyValue} />
+					</td>
+					<td>
+						<CurrencyDisplay amount={item.sellValue} />
+					</td>
 				</tr>
 			{/each}
 		</tbody>

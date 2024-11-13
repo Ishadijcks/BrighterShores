@@ -3,7 +3,7 @@ import { ToolType } from '$lib/data/tool/ToolType';
 
 export interface State {
 	profession: Record<ProfessionId, number>;
-	tools: Record<ToolType, { tier: number, enhancements: number }>;
+	tools: Record<ToolType, { tier: number; enhancements: number }>;
 }
 
 export const createDefaultState = (): State => {
@@ -61,4 +61,4 @@ export const createDefaultState = (): State => {
 			},
 		},
 	};
-}
+};

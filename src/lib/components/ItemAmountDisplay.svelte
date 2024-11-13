@@ -11,4 +11,4 @@
 	const item = $derived(ItemRepository.getItem(itemAmount.id));
 </script>
 
-<span>{itemAmount.amount}x {item.name}</span>
+<span>{itemAmount.amount}x {item.fullName}</span>
