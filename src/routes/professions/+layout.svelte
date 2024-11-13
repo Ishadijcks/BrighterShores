@@ -23,6 +23,8 @@
 	</div>
 </AppBar>
 
-<div class="p-4">
-	{@render children()}
+<div class="flex flex-col items-center p-4">
+	<div class="w-3/4">
+		{@render children()}
+	</div>
 </div>

@@ -20,7 +20,7 @@
 			.find((a) => a.experience.find((x) => x.profession === profession.id)?.amount === 0)
 			?.requirements.find((r) => r.profession === profession.id)?.level ?? 500,
 	);
-	const actionsNeeded = $derived(calculateActionsNeededPerLevel(profession.id, actions, maxLevel));
+	const actionsNeeded = $derived(calculateActionsNeededPerLevel(profession.id, maxLevel));
 
 	let canvas: HTMLCanvasElement;
 	let chart: Chart = $state() as Chart;
