@@ -19,11 +19,9 @@ export const rawForagees: Foragee[] = [
 	{ id: ItemId.CrimsonBellplant, quality: 'Crimson', name: 'Bellplant', description: '', buy: 0, sell: 0 },
 	{ id: ItemId.StarshineBellplant, quality: 'Starshine', name: 'Bellplant', description: '', buy: 0, sell: 0 },
 
-
 	{ id: ItemId.GreenHogberries, quality: 'Green', name: 'Hogberries', description: '', buy: 0, sell: 490 },
 	{ id: ItemId.PurpleHogberries, quality: 'Purple', name: 'Hogberries', description: '', buy: 0, sell: 0 },
 	{ id: ItemId.RedHogberries, quality: 'Red', name: 'Hogberries', description: '', buy: 0, sell: 0 },
-
 
 	{ id: ItemId.BrownKelp, quality: 'Brown', name: 'Kelp', description: '', buy: 0, sell: 200 },
 	{ id: ItemId.GreenKelp, quality: 'Green', name: 'Kelp', description: '', buy: 0, sell: 670 },
@@ -60,7 +58,6 @@ export const rawForagees: Foragee[] = [
 	{ id: ItemId.ReachingPondWeed, quality: 'Reaching', name: 'Pond Weed', description: '', buy: 0, sell: 0 },
 	{ id: ItemId.GreenveilPondWeed, quality: 'Greenveil', name: 'Pond Weed', description: '', buy: 0, sell: 0 },
 
-
 	{ id: ItemId.PiperPotato, quality: 'Piper', name: 'Potato', description: '', buy: 700, sell: 280, lvl: 6 },
 	{ id: ItemId.KingPhelwanPotato, quality: 'King Phelwan', name: 'Potato', description: '', buy: 1540, sell: 550, lvl: 18 },
 	{ id: ItemId.CalystraPotato, quality: 'Calystra', name: 'Potato', description: '', buy: 3590, sell: 190, lvl: 76 },
@@ -68,7 +65,6 @@ export const rawForagees: Foragee[] = [
 	{ id: ItemId.BitterbidePotato, quality: 'Bitterbide', name: 'Potato', description: '', buy: 9280, sell: 2110, lvl: 157 },
 	{ id: ItemId.GreengrailPotato, quality: 'Greengrail', name: 'Potato', description: '', buy: 19400, sell: 3410, lvl: 336 },
 	{ id: ItemId.GalimeerPotato, quality: 'Galimeer', name: 'Potato', description: '', buy: 30800, sell: 4530, lvl: 464 },
-
 
 	{ id: ItemId.HornShell, quality: 'Horn', name: 'Shell', description: '', buy: 0, sell: 260 },
 	{ id: ItemId.BowlShell, quality: 'Bowl', name: 'Shell', description: '', buy: 0, sell: 0 },
