@@ -1,11 +1,11 @@
 import { ProfessionId } from '$lib/data/game/ProfessionId';
-import { ToolType } from '$lib/data/tool/ToolType';
+import { ToolId } from '$lib/data/tool/ToolId';
 import type { Item } from '$lib/model/item/Item';
 import { getLevel } from '$lib/model/profession/LevelData';
 
 export interface State {
 	profession: Record<ProfessionId, number>;
-	tools: Record<ToolType, { tier: number; enhancements: number }>;
+	tools: Record<ToolId, { tier: number; enhancements: number }>;
 }
 
 export const createDefaultState = (): State => {
@@ -37,27 +37,27 @@ export const createDefaultState = (): State => {
 			[ProfessionId.Armorer]: 0,
 		},
 		tools: {
-			[ToolType.UNKNOWN]: {
+			[ToolId.UNKNOWN]: {
 				tier: 0,
 				enhancements: 0,
 			},
-			[ToolType.FishingSpear]: {
+			[ToolId.FishingSpear]: {
 				tier: 0,
 				enhancements: 0,
 			},
-			[ToolType.FishingRod]: {
+			[ToolId.FishingRod]: {
 				tier: 0,
 				enhancements: 0,
 			},
-			[ToolType.CastNet]: {
+			[ToolId.CastNet]: {
 				tier: 0,
 				enhancements: 0,
 			},
-			[ToolType.LobsterPot]: {
+			[ToolId.LobsterPot]: {
 				tier: 0,
 				enhancements: 0,
 			},
-			[ToolType.OysterNet]: {
+			[ToolId.OysterNet]: {
 				tier: 0,
 				enhancements: 0,
 			},

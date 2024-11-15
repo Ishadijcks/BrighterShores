@@ -1,11 +1,16 @@
-import type { ToolType } from '$lib/data/tool/ToolType';
-import type { LevelRequirement } from '$lib/model/profession/LevelRequirement';
+import type { ToolId } from '$lib/data/tool/ToolId';
+import type { ProfessionId } from '$lib/data/game/ProfessionId';
 
 export interface Tool {
-	type: ToolType;
+	id: ToolId;
+	profession: ProfessionId;
 	name: string;
+
+	// TODO(@Isha): Change to descriptions?
+	//  Tools have multiple descriptions, but I don't want to make them into seperate items as they aren't really
 	description: string;
-	tier: number;
-	levelRequirement: LevelRequirement[];
-	cost: number;
+	maxTier: number;
+	lvl: number[];
+	cost: number[];
+	bonusXp: number[];
 }

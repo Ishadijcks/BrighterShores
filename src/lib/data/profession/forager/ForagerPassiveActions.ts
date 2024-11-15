@@ -1,6 +1,6 @@
 import type { PassiveAction } from '$lib/model/profession/PassiveAction';
 import { ProfessionId } from '$lib/data/game/ProfessionId';
-import { ToolType } from '$lib/data/tool/ToolType';
+import { ToolId } from '$lib/data/tool/ToolId';
 import { ItemId } from '$lib/data/game/ItemId';
 
 // TODO(@Isha): Add other stuff like output and gains
@@ -11,11 +11,11 @@ interface ForagerPassive {
 	item: ItemId;
 	cost: number;
 	exp: number;
-	tool: ToolType;
+	tool: ToolId;
 }
 
 const rawForagerPassive: ForagerPassive[] = [
-	{ lvl: 20, cost: 1, quality: 'Gray', name: 'Louse', item: ItemId.GrayLouse, exp: 9, tool: ToolType.None },
+	{ lvl: 20, cost: 1, quality: 'Gray', name: 'Louse', item: ItemId.GrayLouse, exp: 9, tool: ToolId.None },
 	{
 		lvl: 26,
 		cost: 2,
@@ -23,7 +23,7 @@ const rawForagerPassive: ForagerPassive[] = [
 		name: 'Sea Slug',
 		item: ItemId.SlippySeaSlug,
 		exp: 10,
-		tool: ToolType.PondNet,
+		tool: ToolId.PondNet,
 	},
 	{
 		lvl: 32,
@@ -32,7 +32,7 @@ const rawForagerPassive: ForagerPassive[] = [
 		name: 'Sea Potato',
 		item: ItemId.WartySeaPotato,
 		exp: 11,
-		tool: ToolType.Trowel,
+		tool: ToolId.Trowel,
 	},
 	{
 		lvl: 38,
@@ -41,7 +41,7 @@ const rawForagerPassive: ForagerPassive[] = [
 		name: 'Maggots',
 		item: ItemId.BlotchyMaggots,
 		exp: 12,
-		tool: ToolType.UNKNOWN,
+		tool: ToolId.UNKNOWN,
 	},
 	{
 		lvl: 44,
@@ -50,7 +50,7 @@ const rawForagerPassive: ForagerPassive[] = [
 		name: 'Feather',
 		item: ItemId.RedandBlackFeather,
 		exp: 14,
-		tool: ToolType.UNKNOWN,
+		tool: ToolId.UNKNOWN,
 	},
 	{
 		lvl: 50,
@@ -59,7 +59,7 @@ const rawForagerPassive: ForagerPassive[] = [
 		name: 'Spinseed',
 		item: ItemId.BristleSpinseed,
 		exp: 15,
-		tool: ToolType.UNKNOWN,
+		tool: ToolId.UNKNOWN,
 	},
 	{
 		lvl: 56,
@@ -68,10 +68,10 @@ const rawForagerPassive: ForagerPassive[] = [
 		name: 'Scrap Metal',
 		item: ItemId.RustyScrapMetal,
 		exp: 0,
-		tool: ToolType.UNKNOWN,
+		tool: ToolId.UNKNOWN,
 	},
-	{ lvl: 62, cost: 8, quality: 'Brown', name: 'Moth Wing', item: ItemId.BrownMothWing, exp: 0, tool: ToolType.UNKNOWN },
-	{ lvl: 68, cost: 9, quality: 'Black', name: 'Sea Slug', item: ItemId.BlackSeaSlug, exp: 0, tool: ToolType.UNKNOWN },
+	{ lvl: 62, cost: 8, quality: 'Brown', name: 'Moth Wing', item: ItemId.BrownMothWing, exp: 0, tool: ToolId.UNKNOWN },
+	{ lvl: 68, cost: 9, quality: 'Black', name: 'Sea Slug', item: ItemId.BlackSeaSlug, exp: 0, tool: ToolId.UNKNOWN },
 	{
 		lvl: 74,
 		cost: 10,
@@ -79,7 +79,7 @@ const rawForagerPassive: ForagerPassive[] = [
 		name: 'Shimmerbean',
 		item: ItemId.SoftShimmerbean,
 		exp: 0,
-		tool: ToolType.UNKNOWN,
+		tool: ToolId.UNKNOWN,
 	},
 	{
 		lvl: 80,
@@ -88,7 +88,7 @@ const rawForagerPassive: ForagerPassive[] = [
 		name: 'Anemone',
 		item: ItemId.BeadletAnemone,
 		exp: 0,
-		tool: ToolType.UNKNOWN,
+		tool: ToolId.UNKNOWN,
 	},
 	{
 		lvl: 86,
@@ -97,9 +97,9 @@ const rawForagerPassive: ForagerPassive[] = [
 		name: 'Scrap Metal',
 		item: ItemId.TarnishedScrapMetal,
 		exp: 0,
-		tool: ToolType.UNKNOWN,
+		tool: ToolId.UNKNOWN,
 	},
-	{ lvl: 92, cost: 13, quality: 'Ditch', name: 'Sprey', item: ItemId.DitchSprey, exp: 0, tool: ToolType.UNKNOWN },
+	{ lvl: 92, cost: 13, quality: 'Ditch', name: 'Sprey', item: ItemId.DitchSprey, exp: 0, tool: ToolId.UNKNOWN },
 	{
 		lvl: 98,
 		cost: 14,
@@ -107,9 +107,9 @@ const rawForagerPassive: ForagerPassive[] = [
 		name: 'Louse',
 		item: ItemId.ReclusiveLouse,
 		exp: 0,
-		tool: ToolType.UNKNOWN,
+		tool: ToolId.UNKNOWN,
 	},
-	{ lvl: 104, cost: 15, quality: 'Pasty', name: 'Maggots', item: ItemId.PastyMaggots, exp: 0, tool: ToolType.UNKNOWN },
+	{ lvl: 104, cost: 15, quality: 'Pasty', name: 'Maggots', item: ItemId.PastyMaggots, exp: 0, tool: ToolId.UNKNOWN },
 	{
 		lvl: 110,
 		cost: 16,
@@ -117,7 +117,7 @@ const rawForagerPassive: ForagerPassive[] = [
 		name: 'Sea Potato',
 		item: ItemId.BlueSeaPotato,
 		exp: 0,
-		tool: ToolType.Trowel,
+		tool: ToolId.Trowel,
 	},
 	{
 		lvl: 116,
@@ -126,7 +126,7 @@ const rawForagerPassive: ForagerPassive[] = [
 		name: 'Scrap Metal',
 		item: ItemId.TwistedScrapMetal,
 		exp: 0,
-		tool: ToolType.UNKNOWN,
+		tool: ToolId.UNKNOWN,
 	},
 	{
 		lvl: 122,
@@ -135,7 +135,7 @@ const rawForagerPassive: ForagerPassive[] = [
 		name: 'Fluffy Feather',
 		item: ItemId.WhiteFluffyFeather,
 		exp: 0,
-		tool: ToolType.UNKNOWN,
+		tool: ToolId.UNKNOWN,
 	},
 	{
 		lvl: 128,
@@ -144,13 +144,13 @@ const rawForagerPassive: ForagerPassive[] = [
 		name: 'Anemone',
 		item: ItemId.StrawberryAnemone,
 		exp: 0,
-		tool: ToolType.UNKNOWN,
+		tool: ToolId.UNKNOWN,
 	},
-	{ lvl: 134, cost: 20, quality: 'Brown', name: 'Sea Slug', item: ItemId.BrownSeaSlug, exp: 0, tool: ToolType.UNKNOWN },
-	{ lvl: 140, cost: 21, quality: 'Wing', name: 'Spinseed', item: ItemId.WingSpinseed, exp: 0, tool: ToolType.UNKNOWN },
-	{ lvl: 146, cost: 22, quality: 'Icky', name: 'Maggots', item: ItemId.IckyMaggots, exp: 0, tool: ToolType.UNKNOWN },
-	{ lvl: 152, cost: 23, quality: 'Gravel', name: 'Sprey', item: ItemId.GravelSprey, exp: 0, tool: ToolType.UNKNOWN },
-	{ lvl: 158, cost: 24, quality: 'Lacy', name: 'Moth Wing', item: ItemId.LacyMothWing, exp: 0, tool: ToolType.UNKNOWN },
+	{ lvl: 134, cost: 20, quality: 'Brown', name: 'Sea Slug', item: ItemId.BrownSeaSlug, exp: 0, tool: ToolId.UNKNOWN },
+	{ lvl: 140, cost: 21, quality: 'Wing', name: 'Spinseed', item: ItemId.WingSpinseed, exp: 0, tool: ToolId.UNKNOWN },
+	{ lvl: 146, cost: 22, quality: 'Icky', name: 'Maggots', item: ItemId.IckyMaggots, exp: 0, tool: ToolId.UNKNOWN },
+	{ lvl: 152, cost: 23, quality: 'Gravel', name: 'Sprey', item: ItemId.GravelSprey, exp: 0, tool: ToolId.UNKNOWN },
+	{ lvl: 158, cost: 24, quality: 'Lacy', name: 'Moth Wing', item: ItemId.LacyMothWing, exp: 0, tool: ToolId.UNKNOWN },
 	{
 		lvl: 164,
 		cost: 25,
@@ -158,7 +158,7 @@ const rawForagerPassive: ForagerPassive[] = [
 		name: 'Scrap Metal',
 		item: ItemId.MiscellaneousScrapMetal,
 		exp: 0,
-		tool: ToolType.UNKNOWN,
+		tool: ToolId.UNKNOWN,
 	},
 	{
 		lvl: 170,
@@ -167,9 +167,9 @@ const rawForagerPassive: ForagerPassive[] = [
 		name: 'Shimmerbean',
 		item: ItemId.GlowShimmerbean,
 		exp: 0,
-		tool: ToolType.UNKNOWN,
+		tool: ToolId.UNKNOWN,
 	},
-	{ lvl: 176, cost: 27, quality: 'Gunky', name: 'Sea Slug', item: ItemId.GunkySeaSlug, exp: 0, tool: ToolType.UNKNOWN },
+	{ lvl: 176, cost: 27, quality: 'Gunky', name: 'Sea Slug', item: ItemId.GunkySeaSlug, exp: 0, tool: ToolId.UNKNOWN },
 	{
 		lvl: 182,
 		cost: 28,
@@ -177,9 +177,9 @@ const rawForagerPassive: ForagerPassive[] = [
 		name: 'Anemone',
 		item: ItemId.DahliaAnemone,
 		exp: 0,
-		tool: ToolType.UNKNOWN,
+		tool: ToolId.UNKNOWN,
 	},
-	{ lvl: 188, cost: 29, quality: 'Shadow', name: 'Louse', item: ItemId.ShadowLouse, exp: 0, tool: ToolType.UNKNOWN },
+	{ lvl: 188, cost: 29, quality: 'Shadow', name: 'Louse', item: ItemId.ShadowLouse, exp: 0, tool: ToolId.UNKNOWN },
 	{
 		lvl: 194,
 		cost: 30,
@@ -187,10 +187,10 @@ const rawForagerPassive: ForagerPassive[] = [
 		name: 'Scrap Metal',
 		item: ItemId.InterestingScrapMetal,
 		exp: 0,
-		tool: ToolType.UNKNOWN,
+		tool: ToolId.UNKNOWN,
 	},
-	{ lvl: 200, cost: 34, quality: 'Balk', name: 'Sprey', item: ItemId.BalkSprey, exp: 0, tool: ToolType.UNKNOWN },
-	{ lvl: 218, cost: 38, quality: 'Rosy', name: 'Maggots', item: ItemId.RosyMaggots, exp: 0, tool: ToolType.UNKNOWN },
+	{ lvl: 200, cost: 34, quality: 'Balk', name: 'Sprey', item: ItemId.BalkSprey, exp: 0, tool: ToolId.UNKNOWN },
+	{ lvl: 218, cost: 38, quality: 'Rosy', name: 'Maggots', item: ItemId.RosyMaggots, exp: 0, tool: ToolId.UNKNOWN },
 	{
 		lvl: 237,
 		cost: 42,
@@ -198,7 +198,7 @@ const rawForagerPassive: ForagerPassive[] = [
 		name: 'Sea Potato',
 		item: ItemId.SleekSeaPotato,
 		exp: 0,
-		tool: ToolType.Trowel,
+		tool: ToolId.Trowel,
 	},
 	{
 		lvl: 256,
@@ -207,7 +207,7 @@ const rawForagerPassive: ForagerPassive[] = [
 		name: 'Feather',
 		item: ItemId.ShimmeringFeather,
 		exp: 0,
-		tool: ToolType.UNKNOWN,
+		tool: ToolId.UNKNOWN,
 	},
 	{
 		lvl: 274,
@@ -216,7 +216,7 @@ const rawForagerPassive: ForagerPassive[] = [
 		name: 'Scrap Metal',
 		item: ItemId.SubstantialScrapMetal,
 		exp: 0,
-		tool: ToolType.UNKNOWN,
+		tool: ToolId.UNKNOWN,
 	},
 	{
 		lvl: 293,
@@ -225,10 +225,10 @@ const rawForagerPassive: ForagerPassive[] = [
 		name: 'Spinseed',
 		item: ItemId.WhirlSpinseed,
 		exp: 0,
-		tool: ToolType.UNKNOWN,
+		tool: ToolId.UNKNOWN,
 	},
-	{ lvl: 312, cost: 58, quality: 'Eyed', name: 'Moth Wing', item: ItemId.EyedMothWing, exp: 0, tool: ToolType.UNKNOWN },
-	{ lvl: 330, cost: 62, quality: 'Juicy', name: 'Sea Slug', item: ItemId.JuicySeaSlug, exp: 0, tool: ToolType.UNKNOWN },
+	{ lvl: 312, cost: 58, quality: 'Eyed', name: 'Moth Wing', item: ItemId.EyedMothWing, exp: 0, tool: ToolId.UNKNOWN },
+	{ lvl: 330, cost: 62, quality: 'Juicy', name: 'Sea Slug', item: ItemId.JuicySeaSlug, exp: 0, tool: ToolId.UNKNOWN },
 	{
 		lvl: 349,
 		cost: 66,
@@ -236,7 +236,7 @@ const rawForagerPassive: ForagerPassive[] = [
 		name: 'Anemone',
 		item: ItemId.SnakelocksAnemone,
 		exp: 0,
-		tool: ToolType.UNKNOWN,
+		tool: ToolId.UNKNOWN,
 	},
 	{
 		lvl: 368,
@@ -245,7 +245,7 @@ const rawForagerPassive: ForagerPassive[] = [
 		name: 'Maggots',
 		item: ItemId.WrithingMaggots,
 		exp: 0,
-		tool: ToolType.UNKNOWN,
+		tool: ToolId.UNKNOWN,
 	},
 	{
 		lvl: 387,
@@ -254,7 +254,7 @@ const rawForagerPassive: ForagerPassive[] = [
 		name: 'Shimmerbean',
 		item: ItemId.DazzleShimmerbean,
 		exp: 0,
-		tool: ToolType.UNKNOWN,
+		tool: ToolId.UNKNOWN,
 	},
 	{
 		lvl: 405,
@@ -263,7 +263,7 @@ const rawForagerPassive: ForagerPassive[] = [
 		name: 'Sprey',
 		item: ItemId.SentinelSprey,
 		exp: 0,
-		tool: ToolType.UNKNOWN,
+		tool: ToolId.UNKNOWN,
 	},
 	{
 		lvl: 424,
@@ -272,7 +272,7 @@ const rawForagerPassive: ForagerPassive[] = [
 		name: 'Scrap Metal',
 		item: ItemId.SplendidScrapMetal,
 		exp: 0,
-		tool: ToolType.UNKNOWN,
+		tool: ToolId.UNKNOWN,
 	},
 	{
 		lvl: 443,
@@ -281,7 +281,7 @@ const rawForagerPassive: ForagerPassive[] = [
 		name: 'Anemone',
 		item: ItemId.ElegantAnemone,
 		exp: 0,
-		tool: ToolType.UNKNOWN,
+		tool: ToolId.UNKNOWN,
 	},
 	{
 		lvl: 461,
@@ -290,9 +290,9 @@ const rawForagerPassive: ForagerPassive[] = [
 		name: 'Scrap Metal',
 		item: ItemId.ValuableScrapMetal,
 		exp: 0,
-		tool: ToolType.UNKNOWN,
+		tool: ToolId.UNKNOWN,
 	},
-	{ lvl: 480, cost: 94, quality: 'Duke', name: 'Sprey', item: ItemId.DukeSprey, exp: 0, tool: ToolType.UNKNOWN },
+	{ lvl: 480, cost: 94, quality: 'Duke', name: 'Sprey', item: ItemId.DukeSprey, exp: 0, tool: ToolId.UNKNOWN },
 ];
 
 export const foragerPassiveActions: PassiveAction[] = rawForagerPassive.map((p) => {
