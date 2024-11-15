@@ -12,7 +12,7 @@ This table shows the current progress for each skill.
 - N/A Not Applicable
 
 | Profession    | Items | Passive Items | Actions | Passive Actions | Venture Items | Ventures | Tools | Action Rates |
-| ------------- | :---: | :-----------: | :-----: | :-------------: | :-----------: | :------: | :---: | :----------: |
+|---------------|:-----:|:-------------:|:-------:|:---------------:|:-------------:|:--------:|:-----:|:------------:|
 | Guard         |  N/A  |      N/A      |   🟥    |       🟥        |      N/A      |   N/A    |  N/A  |      🟥      |
 | Chef          |  🟩   |      🟥       |   🟨    |       🟥        |      N/A      |   N/A    |  N/A  |      🟥      |
 | Fisher        |  🟩   |      🟩       |   🟨    |       🟥        |      🟩       |   N/A    |  🟩   |      🟥      |

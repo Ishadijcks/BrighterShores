@@ -8,7 +8,7 @@
 
 <div class="flex flex-col space-y-8">
 	{#each episodes as episode}
-		<div class="flex flex-col space-y-1">
+		<div class="flex flex-col space-y-2">
 			<div class="flex flex-row items-center justify-center space-x-1">
 				<EpisodeIcon id={episode.id}></EpisodeIcon>
 				<span>{episode.name}</span>

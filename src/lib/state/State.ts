@@ -5,7 +5,7 @@ import { getLevel } from '$lib/model/profession/LevelData';
 
 export interface State {
 	profession: Record<ProfessionId, number>;
-	tools: Record<ToolId, { tier: number; enhancements: number }>;
+	tool: Record<ToolId, { tier: number; enhancements: number }>;
 }
 
 export const createDefaultState = (): State => {
@@ -36,8 +36,12 @@ export const createDefaultState = (): State => {
 
 			[ProfessionId.Armorer]: 0,
 		},
-		tools: {
+		tool: {
 			[ToolId.UNKNOWN]: {
+				tier: 0,
+				enhancements: 0,
+			},
+			[ToolId.None]: {
 				tier: 0,
 				enhancements: 0,
 			},
@@ -58,6 +62,66 @@ export const createDefaultState = (): State => {
 				enhancements: 0,
 			},
 			[ToolId.OysterNet]: {
+				tier: 0,
+				enhancements: 0,
+			},
+			[ToolId.Trowel]: {
+				tier: 0,
+				enhancements: 0,
+			},
+			[ToolId.PondNet]: {
+				tier: 0,
+				enhancements: 0,
+			},
+			[ToolId.Secateurs]: {
+				tier: 0,
+				enhancements: 0,
+			},
+			[ToolId.HandRake]: {
+				tier: 0,
+				enhancements: 0,
+			},
+			[ToolId.Sickle]: {
+				tier: 0,
+				enhancements: 0,
+			},
+			[ToolId.Hatchet]: {
+				tier: 0,
+				enhancements: 0,
+			},
+			[ToolId.HandSaw]: {
+				tier: 0,
+				enhancements: 0,
+			},
+			[ToolId.TwoPersonSaw]: {
+				tier: 0,
+				enhancements: 0,
+			},
+			[ToolId.TreeLoppers]: {
+				tier: 0,
+				enhancements: 0,
+			},
+			[ToolId.Pickaxe]: {
+				tier: 0,
+				enhancements: 0,
+			},
+			[ToolId.GoldPanningSieve]: {
+				tier: 0,
+				enhancements: 0,
+			},
+			[ToolId.Handcuffs]: {
+				tier: 0,
+				enhancements: 0,
+			},
+			[ToolId.MagnifyingGlass]: {
+				tier: 0,
+				enhancements: 0,
+			},
+			[ToolId.Binoculars]: {
+				tier: 0,
+				enhancements: 0,
+			},
+			[ToolId.WantedPosters]: {
 				tier: 0,
 				enhancements: 0,
 			},
