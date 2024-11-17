@@ -9,7 +9,7 @@ test('calculates levels', () => {
 	expect(getLevel(100000)).toBe(23);
 
 	// Weird flex, but ok ;)
-	expect(getLevel(1634308)).toBe(72);
+	expect(getLevel(28692275)).toBe(200);
 });
 
 test('calculates progress', () => {
