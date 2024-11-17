@@ -3,7 +3,7 @@ import type { Action } from '$lib/model/profession/Action';
 import { ToolRepository } from '$lib/data/repository/ToolRepository';
 import type { Experience } from '$lib/model/profession/Experience';
 
-export const calculateExperience = (state: State, action: Action): Experience[] => {
+export const calculateExperiences = (state: State, action: Action): Experience[] => {
 	return action.experience.map((exp) => {
 		const toolId = action.tool;
 		if (!toolId) {
@@ -12,8 +12,8 @@ export const calculateExperience = (state: State, action: Action): Experience[] 
 		const tool = ToolRepository.getTool(toolId);
 
 		const toolState = state.tool[toolId];
-		const tierBonus = tool.bonusXp[toolState.tier];
-		const enchantBonus = tool.bonusXp[toolState.enchantment];
+		const tierBonus = tool.bonusXp[toolState.tier - 1];
+		const enchantBonus = calculateEnchantmentBonus(toolState.enchantment);
 		return {
 			amount: exp.amount * (1 + tierBonus + enchantBonus),
 			profession: exp.profession,
