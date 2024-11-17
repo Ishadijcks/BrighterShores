@@ -1,1 +1,1 @@
-export type Venture = object
+export type Venture = object;
