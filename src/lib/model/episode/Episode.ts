@@ -7,5 +7,5 @@ export interface Episode {
 	name: string;
 	icon: string;
 	professions: ProfessionId[];
-	rooms: Room[];
+	rooms?: Room[];
 }

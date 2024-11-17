@@ -76,5 +76,6 @@ export const foragingActions: Action[] = rawForagingActions.map((action) => {
 		input: [],
 		output: [{ id: action.item, amount: 1 }],
 		experience: [{ profession: ProfessionId.Forager, amount: action.exp }],
+		tool: action.tool,
 	};
 });

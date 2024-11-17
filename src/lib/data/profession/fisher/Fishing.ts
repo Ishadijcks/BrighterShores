@@ -77,5 +77,6 @@ export const activeFishingActions: Action[] = rawActiveFishingActions.map((a) =>
 					Infinity,
 			},
 		],
+		tool: a.tool,
 	};
 });

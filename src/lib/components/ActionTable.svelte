@@ -30,6 +30,7 @@
 					<th>Value</th>
 				{/if}
 				<th>Experience</th>
+				<th>Your Exp</th>
 				{#if hasInput && hasOutput}
 					<th>Profit</th>
 				{/if}
@@ -57,6 +58,9 @@
 							<CurrencyDisplay amount={calculateSellValue(action.output)} />
 						</td>
 					{/if}
+					<td>
+						<ExpsDisplay exps={action.experience} />
+					</td>
 					<td>
 						<ExpsDisplay exps={action.experience} />
 					</td>

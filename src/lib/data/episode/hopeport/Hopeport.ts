@@ -11,7 +11,7 @@ export const hopeport: Episode = {
 		ProfessionId.Guard,
 		ProfessionId.Chef,
 		ProfessionId.Fisher,
-		ProfessionId.Gatherer,
+		ProfessionId.Forager,
 		ProfessionId.Alchemist,
 	],
 	rooms: [stoneStreet],

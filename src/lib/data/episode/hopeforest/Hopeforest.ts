@@ -6,5 +6,5 @@ export const hopeforest: Episode = {
 	id: EpisodeId.Hopeforest,
 	name: 'Hopeforest',
 	icon: 'episode/hopeforest.png',
-	professions: [ProfessionId.Scout, ProfessionId.Forager, ProfessionId.Woodcutter, ProfessionId.Carpenter],
+	professions: [ProfessionId.Scout, ProfessionId.Gatherer, ProfessionId.Woodcutter, ProfessionId.Carpenter],
 };

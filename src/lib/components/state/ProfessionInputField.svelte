@@ -46,7 +46,7 @@
 						</td>
 						<td>
 							<div class="input-group w-24 grid-cols-[auto_1fr_auto] divide-x divide-surface-200-800">
-								<input class="input" type="number" bind:value={state.tool[tool.id].enhancements} />
+								<input class="input" type="number" bind:value={state.tool[tool.id].enchantment} />
 								<div class="input-group-cell">❗</div>
 							</div>
 						</td>
