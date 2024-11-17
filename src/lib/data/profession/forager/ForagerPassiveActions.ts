@@ -11,11 +11,11 @@ interface ForagerPassive {
 	item: ItemId;
 	cost: number;
 	exp: number;
-	tool: ToolId;
+	tool?: ToolId;
 }
 
 const rawForagerPassive: ForagerPassive[] = [
-	{ lvl: 20, cost: 1, quality: 'Gray', name: 'Louse', item: ItemId.GrayLouse, exp: 9, tool: ToolId.None },
+	{ lvl: 20, cost: 1, quality: 'Gray', name: 'Louse', item: ItemId.GrayLouse, exp: 9 },
 	{
 		lvl: 26,
 		cost: 2,

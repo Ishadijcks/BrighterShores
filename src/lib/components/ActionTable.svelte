@@ -5,6 +5,10 @@
 	import LevelRequirementsDisplay from '$lib/components/LevelRequirementsDisplay.svelte';
 	import CurrencyDisplay from '$lib/components/CurrencyDisplay.svelte';
 	import { calculateBuyValue, calculateProfit, calculateSellValue } from '$lib/util/Pricing';
+	import { calculateExperiences } from '$lib/calculations/ActionCalculator';
+	import { getContext } from 'svelte';
+	import type { LocalStore } from '$lib/util/LocalStore.svelte';
+	import type { State } from '$lib/state/State';
 
 	interface Props {
 		actions: Action[];
@@ -14,6 +18,8 @@
 
 	let hasInput: boolean = $derived(actions.some((a) => a.input.length > 0));
 	let hasOutput: boolean = $derived(actions.some((a) => a.output.length > 0));
+
+	const state = getContext<LocalStore<State>>('state')?.value;
 </script>
 
 <div class="table-wrap">
@@ -62,7 +68,7 @@
 						<ExpsDisplay exps={action.experience} />
 					</td>
 					<td>
-						<ExpsDisplay exps={action.experience} />
+						<ExpsDisplay exps={calculateExperiences(state, action)} />
 					</td>
 					{#if hasInput && hasOutput}
 						<td>

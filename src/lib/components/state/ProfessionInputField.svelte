@@ -40,13 +40,24 @@
 						</td>
 						<td>
 							<div class="input-group w-24 grid-cols-[auto_1fr_auto] divide-x divide-surface-200-800">
-								<input class="input" type="number" bind:value={state.tool[tool.id].tier} />
+								<input
+									class="input [&::-webkit-inner-spin-button]:appearance-none"
+									type="number"
+									bind:value={state.tool[tool.id].tier}
+									min="0"
+									max={tool.maxTier}
+								/>
 								<div class="input-group-cell">✨</div>
 							</div>
 						</td>
 						<td>
 							<div class="input-group w-24 grid-cols-[auto_1fr_auto] divide-x divide-surface-200-800">
-								<input class="input" type="number" bind:value={state.tool[tool.id].enchantment} />
+								<input
+									class="input [&::-webkit-inner-spin-button]:appearance-none"
+									type="number"
+									bind:value={state.tool[tool.id].enchantment}
+									min="0"
+								/>
 								<div class="input-group-cell">❗</div>
 							</div>
 						</td>

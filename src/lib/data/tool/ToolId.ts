@@ -2,9 +2,6 @@ export enum ToolId {
 	// TODO(@Isha): Remove once everything is known!
 	UNKNOWN,
 
-	// TODO(@Isha): Remove and make optional?
-	None,
-
 	// Fisher
 	FishingSpear,
 	FishingRod,

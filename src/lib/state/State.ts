@@ -41,10 +41,6 @@ export const createDefaultState = (): State => {
 				tier: 0,
 				enchantment: 0,
 			},
-			[ToolId.None]: {
-				tier: 0,
-				enchantment: 0,
-			},
 			[ToolId.FishingSpear]: {
 				tier: 0,
 				enchantment: 0,

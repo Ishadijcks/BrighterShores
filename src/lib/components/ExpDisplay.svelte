@@ -11,5 +11,5 @@
 
 <div class="flex flex-row items-center space-x-1">
 	<ProfessionIcon id={exp.profession} />
-	<span>{exp.amount > 0 ? exp.amount : '??'}</span>
+	<span>{exp.amount > 0 ? Math.round(exp.amount) : '??'}</span>
 </div>
