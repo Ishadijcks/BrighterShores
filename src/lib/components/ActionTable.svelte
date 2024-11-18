@@ -19,7 +19,10 @@
 	let hasInput: boolean = $derived(actions.some((a) => a.input.length > 0));
 	let hasOutput: boolean = $derived(actions.some((a) => a.output.length > 0));
 
-	const state = getContext<LocalStore<State>>('state')?.value;
+	const playerState = getContext<LocalStore<State>>('state')?.value;
+
+	const rowIndexHighlights = $state({} as Record<number, boolean>);
+	const toggleIndex = (i: number) => (rowIndexHighlights[i] = !rowIndexHighlights[i]);
 </script>
 
 <div class="table-wrap">
@@ -43,8 +46,8 @@
 			</tr>
 		</thead>
 		<tbody class="hover:[&>tr]:preset-tonal-primary">
-			{#each actions as action}
-				<tr>
+			{#each actions as action, index}
+				<tr class={rowIndexHighlights[index] ? '[&&&]:preset-tonal-secondary' : ''} onclick={() => toggleIndex(index)}>
 					<td>
 						<LevelRequirementsDisplay reqs={action.requirements} />
 					</td>
@@ -68,7 +71,7 @@
 						<ExpsDisplay exps={action.experience} />
 					</td>
 					<td>
-						<ExpsDisplay exps={calculateExperiences(state, action)} />
+						<ExpsDisplay exps={calculateExperiences(playerState, action)} />
 					</td>
 					{#if hasInput && hasOutput}
 						<td>

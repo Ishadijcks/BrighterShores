@@ -14,9 +14,11 @@
 <div class="flex flex-col items-center space-y-8">
 	<ProfessionInputField id={profession.id} />
 
-	<ActionTable actions={profession.actions} />
-	{#if profession.passives}
-		<PassiveActionTable actions={profession.passives} />
-	{/if}
-	<ActionsPerLevelChart id={data.profession.id} />
+	{#key profession}
+		<ActionTable actions={profession.actions} />
+		{#if profession.passives}
+			<PassiveActionTable actions={profession.passives} />
+		{/if}
+		<ActionsPerLevelChart id={data.profession.id} />
+	{/key}
 </div>
