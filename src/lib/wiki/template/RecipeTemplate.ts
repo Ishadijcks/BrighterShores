@@ -17,10 +17,11 @@ export interface RecipeTemplateConfig {
 	rawMat3qty?: string;
 	output1?: string;
 	output1qty?: string;
+	showFull: string;
 }
 
 export class RecipeTemplate extends WikiTemplate {
-	public name: string = 'Infobox RecipeNew';
+	public name: string = 'Infobox Recipe';
 
 	public render(action: Action): string {
 		const config: RecipeTemplateConfig = {
@@ -37,6 +38,7 @@ export class RecipeTemplate extends WikiTemplate {
 			rawMat3qty: action.input[2]?.amount.toString(),
 			output1: ItemRepository.getItem(action.output[0]?.id, true)?.fullName,
 			output1qty: action.output[0]?.amount.toString(),
+			showFull: 'true',
 		};
 		return this._render(config);
 	}
