@@ -30,6 +30,7 @@
 	<a class="px-4 preset-tonal-error" href="{base}/monsters">Monsters</a>
 	<a class="px-4 preset-tonal-error" href="{base}/quests">Quests</a>
 	<a class="px-4" href="{base}/shops">Shops</a>
+	<a class="px-4" href="{base}/wiki">Wiki</a>
 </AppBar>
 
 <div class="p-4">

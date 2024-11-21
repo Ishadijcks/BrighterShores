@@ -39,11 +39,11 @@ export class ItemRepository {
 		...capes,
 	];
 
-	public static getItem(id: ItemId): Item {
+	public static getItem(id: ItemId, suppressError: boolean = false): Item {
 		const item = this.items.find((item) => item.id === id);
-		if (item === undefined) {
+		if (item === undefined && !suppressError) {
 			throw new Error(`Could not find item with id '${id}'`);
 		}
-		return item;
+		return item as Item;
 	}
 }
