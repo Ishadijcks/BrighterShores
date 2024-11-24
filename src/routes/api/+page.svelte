@@ -21,6 +21,6 @@
 	promise.
 </p>
 <p>
-	Stop complaining and <a href="https://github.com/Ishadijcks/BrighterShores/issues/7" target="_blank">help me fix it</a
->!
+	Stop complaining and
+	<a href="https://github.com/Ishadijcks/BrighterShores/issues/7" target="_blank">help me fix it!</a>
 </p>
