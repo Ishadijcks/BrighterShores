@@ -1,5 +1,5 @@
 <script lang="ts">
-	import '../app.css';
+	import '../../app.css';
 	import { base } from '$app/paths';
 
 	import { AppBar } from '@skeletonlabs/skeleton-svelte';
@@ -8,7 +8,7 @@
 	let { children } = $props();
 
 	import { setContext } from 'svelte';
-	import { localStore } from '$lib/util/LocalStore.svelte';
+	import { localStore } from '$lib/util/LocalStore.svelte.js';
 	import { createDefaultState } from '$lib/state/State';
 
 	const state = localStore('state', createDefaultState());

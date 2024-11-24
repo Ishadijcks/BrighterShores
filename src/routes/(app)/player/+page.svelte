@@ -2,7 +2,7 @@
 	import ProfessionInputTable from '$lib/components/state/ProfessionInputTable.svelte';
 	import { calculateTotalLevel } from '$lib/calculations/ProfessionCalculator';
 	import { getContext } from 'svelte';
-	import type { LocalStore } from '$lib/util/LocalStore.svelte';
+	import type { LocalStore } from '$lib/util/LocalStore.svelte.js';
 	import type { State } from '$lib/state/State';
 
 	const state = getContext<LocalStore<State>>('state')?.value;

@@ -42,7 +42,16 @@ export class ItemRepository {
 	public static getItem(id: ItemId, suppressError: boolean = false): Item {
 		const item = this.items.find((item) => item.id === id);
 		if (item === undefined && !suppressError) {
+			console.trace('asd');
 			throw new Error(`Could not find item with id '${id}'`);
+		}
+		return item as Item;
+	}
+
+	static getItemByName(name: string) {
+		const item = this.items.find((item) => item.name === name);
+		if (item === undefined) {
+			throw new Error(`Could not find item with name '${name}'`);
 		}
 		return item as Item;
 	}
