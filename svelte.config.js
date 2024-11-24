@@ -9,7 +9,7 @@ const config = {
 
 	kit: {
 		adapter: adapter({
-			fallback: '404.html',
+			strict: true,
 		}),
 		paths: {
 			base: process.argv.includes('dev') ? '' : process.env.BASE_PATH,
