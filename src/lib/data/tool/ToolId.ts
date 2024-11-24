@@ -1,36 +1,36 @@
 export enum ToolId {
 	// TODO(@Isha): Remove once everything is known!
-	UNKNOWN,
+	UNKNOWN = '/tool/unknown',
 
 	// Fisher
-	FishingSpear,
-	FishingRod,
-	CastNet,
-	LobsterPot,
-	OysterNet,
+	FishingSpear = '/tool/fishing_spear',
+	FishingRod = '/tool/fishing_rod',
+	CastNet = '/tool/cast_net',
+	LobsterPot = '/tool/lobster_pot',
+	OysterNet = '/tool/oyster_net',
 
 	// Forager
-	Trowel,
-	PondNet,
-	Secateurs,
+	Trowel = '/tool/trowel',
+	PondNet = '/tool/pond_net',
+	Secateurs = '/tool/secateurs',
 
 	// Gatherer
-	HandRake,
-	Sickle,
+	HandRake = '/tool/hand_rake',
+	Sickle = '/tool/sickle',
 
 	// Woodcutter,
-	Hatchet,
-	HandSaw,
-	TwoPersonSaw,
-	TreeLoppers,
+	Hatchet = '/tool/hatchet',
+	HandSaw = '/tool/hand_saw',
+	TwoPersonSaw = '/tool/two_person_saw',
+	TreeLoppers = '/tool/tree_loppers',
 
 	// Miner
-	Pickaxe,
-	GoldPanningSieve,
+	Pickaxe = '/tool/pickaxe',
+	GoldPanningSieve = '/tool/gold_panning_sieve',
 
 	// Detective
-	Handcuffs,
-	MagnifyingGlass,
-	Binoculars,
-	WantedPosters,
+	Handcuffs = '/tool/handcuffs',
+	MagnifyingGlass = '/tool/magnifying_glass',
+	Binoculars = '/tool/binoculars',
+	WantedPosters = '/tool/wanted_posters',
 }

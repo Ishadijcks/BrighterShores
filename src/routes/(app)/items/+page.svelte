@@ -5,7 +5,7 @@
 	import EpisodeIcon from '$lib/components/EpisodeIcon.svelte';
 	import { canUseItem, type State } from '$lib/state/State';
 	import { getContext } from 'svelte';
-	import type { LocalStore } from '$lib/util/LocalStore.svelte';
+	import type { LocalStore } from '$lib/util/LocalStore.svelte.js';
 	import ItemNameDisplay from '$lib/components/ItemNameDisplay.svelte';
 
 	const items = $derived(ItemRepository.items);

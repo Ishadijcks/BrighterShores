@@ -1,8 +1,8 @@
 export enum StorageType {
-	LumberBank,
-	TimberBank,
-	HidesBank,
-	LeathersBank,
+	LumberBank = '/bank/lumber_bank',
+	TimberBank = '/bank/timber_bank',
+	HidesBank = '/bank/hides_bank',
+	LeathersBank = '/bank/leathers_bank',
 
-	CapesBank,
+	CapesBank = '/bank/capes_bank',
 }
