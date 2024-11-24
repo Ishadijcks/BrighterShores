@@ -1,5 +1,5 @@
 <script lang="ts">
-	import '../../app.css';
+	import '../app.css';
 	import { base } from '$app/paths';
 
 	import { AppBar } from '@skeletonlabs/skeleton-svelte';
@@ -31,6 +31,7 @@
 	<a class="px-4 preset-tonal-error" href="{base}/quests">Quests</a>
 	<a class="px-4" href="{base}/shops">Shops</a>
 	<a class="px-4" href="{base}/wiki">Wiki</a>
+	<a class="px-4" href="{base}/api">API</a>
 </AppBar>
 
 <div class="p-4">
