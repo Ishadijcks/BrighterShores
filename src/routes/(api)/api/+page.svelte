@@ -11,7 +11,7 @@
 
 <h2 class="h2">Examples</h2>
 <ul class="list-inside list-disc space-y-2">
-	<li><a href="{base}/api/v1/item/bread">{base}/api/item/bread</a></li>
+	<li><a href="{base}/api/v1/item/bread.json">{base}/api/item/bread</a></li>
 	<li><a href="{base}/api/v1/episode/hopeport">{base}/api/episode/hopeport</a></li>
 	<li><a href="{base}/api/v1/profession/fisher">{base}/api/profession/fisher</a></li>
 </ul>
