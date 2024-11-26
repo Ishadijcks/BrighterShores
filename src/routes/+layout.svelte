@@ -31,6 +31,7 @@
 	<a class="px-4 preset-tonal-error" href="{base}/quests">Quests</a>
 	<a class="px-4" href="{base}/shops">Shops</a>
 	<a class="px-4" href="{base}/wiki">Wiki</a>
+	<a class="px-4" href="{base}/exp">Exp</a>
 	<a class="px-4" href="{base}/api">API</a>
 </AppBar>
 

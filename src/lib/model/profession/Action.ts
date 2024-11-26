@@ -12,4 +12,6 @@ export interface Action {
 	// TODO(@Isha): Optional for now as we don't have a list of all locations yet
 	locations?: RoomId[];
 	tool?: ToolId;
+	// The amount of actions you can perform per hour
+	perHour?: number;
 }

@@ -5,6 +5,7 @@
 	import ActionsPerLevelChart from '$lib/components/ActionsPerLevelChart.svelte';
 	import PassiveActionTable from '$lib/components/PassiveActionTable.svelte';
 	import ProfessionInputField from '$lib/components/state/ProfessionInputField.svelte';
+	import TimePerLevelChart from '$lib/components/state/TimePerLevelChart.svelte';
 
 	let { data }: { data: PageData } = $props();
 
@@ -15,10 +16,13 @@
 	<ProfessionInputField id={profession.id} />
 
 	{#key profession}
-		<ActionTable actions={profession.actions} />
+		<ActionTable professionId={profession.id} actions={profession.actions} />
 		{#if profession.passives}
 			<PassiveActionTable actions={profession.passives} />
 		{/if}
-		<ActionsPerLevelChart id={data.profession.id} />
+		<div class="flex flex-row">
+			<ActionsPerLevelChart id={data.profession.id} />
+			<TimePerLevelChart id={data.profession.id} />
+		</div>
 	{/key}
 </div>

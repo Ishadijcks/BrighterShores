@@ -78,5 +78,6 @@ export const activeFishingActions: Action[] = rawActiveFishingActions.map((a) =>
 			},
 		],
 		tool: a.tool,
+		perHour: ((60 * 60) / 45) * 6,
 	};
 });

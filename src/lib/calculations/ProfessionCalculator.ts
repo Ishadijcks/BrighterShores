@@ -35,6 +35,40 @@ export const calculateActionsNeededPerLevel = (professionId: ProfessionId, maxLe
 	});
 };
 
+/**
+ * Calculates the amount of time needed to gain a level in the specified profession
+ * Assumes you will always use the action that gives the most exp/time.
+ * @param professionId The profession to check for
+ * @param maxLevel How many levels to calculate
+ */
+export const calculateTimeNeededPerLevel = (professionId: ProfessionId, maxLevel: number = 500): number[] => {
+	// TODO(@Isha): Refactor duplicate logic
+	const profession = ProfessionRepository.getProfession(professionId);
+	const levels = Array.from(Array(maxLevel).keys());
+
+	return levels.map((n) => {
+		const expNeeded = getTotalExpForLevel(n);
+		const possibleActions = profession.actions.filter((action) => {
+			const req = action.requirements.find((r) => {
+				return r.profession === professionId;
+			});
+			return n >= (req?.level ?? Infinity);
+		});
+
+		const possibleExpPerHour: number[] = possibleActions.map((action) => {
+			const exp =
+				action.experience.find((r) => {
+					return r.profession === professionId;
+				})?.amount ?? 0;
+			return exp * (action.perHour ?? 0);
+		});
+
+		const bestExpPerHour = Math.max(...possibleExpPerHour);
+
+		return expNeeded / bestExpPerHour;
+	});
+};
+
 export const calculateTotalLevel = (state: State): number => {
 	return Object.values(state.profession)
 		.map((exp) => getLevel(exp))
@@ -78,5 +112,4 @@ export const calculateActionsNeededTorEachLevel = (
 		exp += bestExp;
 		actionsUsed['test'] += 1;
 	}
-	console.log(actionsUsed);
 };

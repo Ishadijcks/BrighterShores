@@ -5,16 +5,18 @@
 	import LevelRequirementsDisplay from '$lib/components/LevelRequirementsDisplay.svelte';
 	import CurrencyDisplay from '$lib/components/CurrencyDisplay.svelte';
 	import { calculateBuyValue, calculateProfit, calculateSellValue } from '$lib/util/Pricing';
-	import { calculateExperiences } from '$lib/calculations/ActionCalculator';
+	import { calculateExperiences, hasExpModifiers } from '$lib/calculations/ActionCalculator';
 	import { getContext } from 'svelte';
 	import type { LocalStore } from '$lib/util/LocalStore.svelte';
 	import type { State } from '$lib/state/State';
+	import type { ProfessionId } from '$lib/data/game/ProfessionId';
 
 	interface Props {
 		actions: Action[];
+		professionId: ProfessionId;
 	}
 
-	let { actions }: Props = $props();
+	let { actions, professionId }: Props = $props();
 
 	let hasInput: boolean = $derived(actions.some((a) => a.input.length > 0));
 	let hasOutput: boolean = $derived(actions.some((a) => a.output.length > 0));
@@ -23,8 +25,25 @@
 
 	const rowIndexHighlights = $state({} as Record<number, boolean>);
 	const toggleIndex = (i: number) => (rowIndexHighlights[i] = !rowIndexHighlights[i]);
+
+	let showExpModifier = $state(hasExpModifiers(professionId));
+	const showYourExp: boolean = $derived(playerState.config.showYourExp);
+	const showValues: boolean = $derived(playerState.config.showValues);
 </script>
 
+<div class="flex flex-row space-x-8">
+	<label class="flex items-center space-x-2">
+		<input class="checkbox" type="checkbox" bind:checked={playerState.config.showValues} />
+		<span>Show values</span>
+	</label>
+
+	{#if showExpModifier}
+		<label class="flex items-center space-x-2">
+			<input class="checkbox" type="checkbox" bind:checked={playerState.config.showYourExp} />
+			<span>Show your exp</span>
+		</label>
+	{/if}
+</div>
 <div class="table-wrap">
 	<table class="table">
 		<thead>
@@ -32,15 +51,18 @@
 				<th>Level</th>
 				{#if hasInput}
 					<th>Input</th>
-					<th>Cost</th>
+					{#if showValues}
+						<th>Cost</th>
+					{/if}
 				{/if}
 				{#if hasOutput}
 					<th>Output</th>
-					<th>Value</th>
+					{#if showValues}
+						<th>Value</th>
+					{/if}
 				{/if}
-				<th>Experience</th>
-				<th>Your Exp</th>
-				{#if hasInput && hasOutput}
+				<th>{showYourExp && showExpModifier ? 'Your Exp' : 'Experience'}</th>
+				{#if hasInput && hasOutput && showValues}
 					<th>Profit</th>
 				{/if}
 			</tr>
@@ -55,25 +77,26 @@
 						<td>
 							<ItemAmountsDisplay items={action.input} />
 						</td>
-						<td>
-							<CurrencyDisplay amount={calculateBuyValue(action.input)} />
-						</td>
+						{#if showValues}
+							<td>
+								<CurrencyDisplay amount={calculateBuyValue(action.input)} />
+							</td>
+						{/if}
 					{/if}
 					{#if hasOutput}
 						<td>
 							<ItemAmountsDisplay items={action.output} />
 						</td>
-						<td>
-							<CurrencyDisplay amount={calculateSellValue(action.output)} />
-						</td>
+						{#if showValues}
+							<td>
+								<CurrencyDisplay amount={calculateSellValue(action.output)} />
+							</td>
+						{/if}
 					{/if}
-					<td>
-						<ExpsDisplay exps={action.experience} />
+					<td class={showYourExp ? 'text-primary-900-100' : ''}>
+						<ExpsDisplay exps={showYourExp ? calculateExperiences(playerState, action) : action.experience} />
 					</td>
-					<td>
-						<ExpsDisplay exps={calculateExperiences(playerState, action)} />
-					</td>
-					{#if hasInput && hasOutput}
+					{#if hasInput && hasOutput && showValues}
 						<td>
 							<CurrencyDisplay amount={calculateProfit(action)} highlightSign={true} />
 						</td>
@@ -83,9 +106,7 @@
 		</tbody>
 		<tfoot>
 			<tr>
-				<!-- Lol -->
-				<td colspan={6 - (hasInput ? 0 : 2) - (hasOutput ? 0 : 2) - (hasInput && hasOutput ? 0 : 1)}>Total</td>
-				<td class="text-right">{actions.length} Actions</td>
+				<td colspan="100" class="text-right">{actions.length} Actions</td>
 			</tr>
 		</tfoot>
 	</table>

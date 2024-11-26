@@ -6,6 +6,7 @@
 	import { getContext } from 'svelte';
 	import type { LocalStore } from '$lib/util/LocalStore.svelte';
 	import type { State } from '$lib/state/State';
+	import { calculateEnchantmentBonus, calculateTierBonus } from '$lib/calculations/ActionCalculator';
 
 	interface Props {
 		id: ProfessionId;
@@ -13,7 +14,7 @@
 
 	let { id }: Props = $props();
 
-	const state = getContext<LocalStore<State>>('state')?.value;
+	const playerState = getContext<LocalStore<State>>('state')?.value;
 
 	const profession = $derived(ProfessionRepository.getProfession(id));
 </script>
@@ -24,10 +25,10 @@
 			<div class="w-42 flex flex-row items-center space-x-2">
 				<ProfessionIcon id={profession.id} />
 				<span>{profession.name}</span>
-				<span>({getLevel(state.profession[profession.id])})</span>
+				<span>({getLevel(playerState.profession[profession.id])})</span>
 			</div>
 		</div>
-		<input type="number" bind:value={state.profession[profession.id]} />
+		<input type="number" bind:value={playerState.profession[profession.id]} />
 	</div>
 
 	<div class="table-wrap">
@@ -43,11 +44,14 @@
 								<input
 									class="input [&::-webkit-inner-spin-button]:appearance-none"
 									type="number"
-									bind:value={state.tool[tool.id].tier}
+									bind:value={playerState.tool[tool.id].tier}
 									min="0"
 									max={tool.maxTier}
 								/>
-								<div class="input-group-cell">✨</div>
+								<div class="input-group-cell flex flex-col items-center text-xs">
+									<span>✨</span>
+									<span>+{(100 * calculateTierBonus(tool, playerState.tool[tool.id].tier)).toFixed(2)}%</span>
+								</div>
 							</div>
 						</td>
 						<td>
@@ -55,10 +59,13 @@
 								<input
 									class="input [&::-webkit-inner-spin-button]:appearance-none"
 									type="number"
-									bind:value={state.tool[tool.id].enchantment}
+									bind:value={playerState.tool[tool.id].enchantment}
 									min="0"
 								/>
-								<div class="input-group-cell">❗</div>
+								<div class="input-group-cell flex flex-col justify-center text-xs">
+									<span>❗</span>
+									<span>+{(100 * calculateEnchantmentBonus(playerState.tool[tool.id].enchantment)).toFixed(2)}%</span>
+								</div>
 							</div>
 						</td>
 					</tr>

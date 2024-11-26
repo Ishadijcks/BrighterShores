@@ -6,11 +6,19 @@ import { getLevel } from '$lib/model/profession/LevelData';
 export interface State {
 	profession: Record<ProfessionId, number>;
 	tool: Record<ToolId, { tier: number; enchantment: number }>;
+	config: {
+		showValues: boolean;
+		showYourExp: boolean;
+	};
 }
 
 export const createDefaultState = (): State => {
 	// TODO(@Isha): Add iteration over enums instead of manual declaration
 	return {
+		config: {
+			showValues: true,
+			showYourExp: true,
+		},
 		profession: {
 			[ProfessionId.Guard]: 0,
 			[ProfessionId.Chef]: 0,

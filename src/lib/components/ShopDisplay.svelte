@@ -1,6 +1,4 @@
 <script lang="ts">
-	import type { Npc } from '$lib/model/world/Npc';
-	import { NpcRepository } from '$lib/data/repository/NpcRepository';
 	import { ItemRepository } from '$lib/data/repository/ItemRepository';
 	import type { Shop } from '$lib/model/world/Shop';
 	import type { Item } from '$lib/model/item/Item';
@@ -13,22 +11,18 @@
 
 	let { shop }: Props = $props();
 
-	const owner: Npc = $derived(NpcRepository.getNpc(shop.owner));
-
 	const keys: string[] = $derived(Object.keys(shop.items));
 	const items: Item[][] = $derived(Object.values(shop.items).map((ids) => ids.map((id) => ItemRepository.getItem(id))));
 </script>
 
-<p>{shop.name} is a shop run by {owner.name}</p>
-
-{#each keys as key, index}
-	<div class="table-wrap">
-		<table class="table">
+<div class="flex w-full flex-col items-center space-y-8">
+	{#each keys as key, index}
+		<table class="table w-1/2">
 			<thead>
 				<tr>
-					<th>{key}</th>
-					<th>Buy</th>
-					<th>Sell</th>
+					<th class="w-48">{key}</th>
+					<th class="w-24">Buy</th>
+					<th class="w-24">Sell</th>
 				</tr>
 			</thead>
 			<tbody class="hover:[&>tr]:preset-tonal-primary">
@@ -48,10 +42,10 @@
 			</tbody>
 			<tfoot>
 				<tr>
-					<td colspan="4">Total</td>
+					<td colspan="2">Total</td>
 					<td class="text-right">{items[index].length} Items</td>
 				</tr>
 			</tfoot>
 		</table>
-	</div>
-{/each}
+	{/each}
+</div>

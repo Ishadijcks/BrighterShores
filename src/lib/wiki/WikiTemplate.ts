@@ -13,4 +13,12 @@ export abstract class WikiTemplate {
 
 		return `{{ ${this.name}\n` + argumentString + '\n}}\n';
 	}
+
+	protected _renderTable(rows: string[][]): string {
+		return rows
+			.map((row) => {
+				return '|-\n| ' + row.join(' || ');
+			})
+			.join('\n');
+	}
 }
