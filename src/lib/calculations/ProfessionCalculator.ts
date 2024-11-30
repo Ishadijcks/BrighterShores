@@ -1,7 +1,8 @@
 import { getExp, getLevel, getTotalExpForLevel } from '$lib/model/profession/LevelData';
 import type { ProfessionId } from '$lib/data/game/ProfessionId';
 import { ProfessionRepository } from '$lib/data/repository/ProfessionRepository';
-import type { State } from '$lib/state/State';
+import { createDefaultState, type State } from '$lib/state/State';
+import { calculateExperiences } from '$lib/calculations/ActionCalculator';
 
 /**
  * Calculates the amount of actions need to be performed to gain a level in the specified profession
@@ -40,8 +41,13 @@ export const calculateActionsNeededPerLevel = (professionId: ProfessionId, maxLe
  * Assumes you will always use the action that gives the most exp/time.
  * @param professionId The profession to check for
  * @param maxLevel How many levels to calculate
+ * @param playerState Calculate information for the given state
  */
-export const calculateTimeNeededPerLevel = (professionId: ProfessionId, maxLevel: number = 500): number[] => {
+export const calculateTimeNeededPerLevel = (
+	professionId: ProfessionId,
+	maxLevel: number = 500,
+	playerState: State = createDefaultState(),
+): number[] => {
 	// TODO(@Isha): Refactor duplicate logic
 	const profession = ProfessionRepository.getProfession(professionId);
 	const levels = Array.from(Array(maxLevel).keys());
@@ -57,7 +63,7 @@ export const calculateTimeNeededPerLevel = (professionId: ProfessionId, maxLevel
 
 		const possibleExpPerHour: number[] = possibleActions.map((action) => {
 			const exp =
-				action.experience.find((r) => {
+				calculateExperiences(playerState, action).find((r) => {
 					return r.profession === professionId;
 				})?.amount ?? 0;
 			return exp * (action.perHour ?? 0);
