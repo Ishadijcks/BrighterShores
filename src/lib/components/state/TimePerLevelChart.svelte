@@ -1,9 +1,11 @@
 <script lang="ts">
 	import { Chart } from 'chart.js/auto';
-	import { onMount } from 'svelte';
+	import { getContext, onMount } from 'svelte';
 	import type { ProfessionId } from '$lib/data/game/ProfessionId';
 	import { ProfessionRepository } from '$lib/data/repository/ProfessionRepository';
 	import { calculateTimeNeededPerLevel } from '$lib/calculations/ProfessionCalculator';
+	import type { LocalStore } from '$lib/util/LocalStore.svelte';
+	import type { State } from '$lib/state/State';
 
 	interface Props {
 		id: ProfessionId;
@@ -14,16 +16,18 @@
 	const profession = $derived(ProfessionRepository.getProfession(id));
 	const actions = $derived(profession.actions);
 
+	const playerState = getContext<LocalStore<State>>('state')?.value;
+
 	// Calculate the highest level that has an unknown (0) amount of experience
 	const maxLevel = $derived(
 		Math.min(
-			200,
+			500,
 			actions
 				.find((a) => a.experience.find((x) => x.profession === profession.id)?.amount === 0)
 				?.requirements.find((r) => r.profession === profession.id)?.level ?? 500,
 		),
 	);
-	const timeNeeded = $derived(calculateTimeNeededPerLevel(profession.id, maxLevel));
+	const timeNeeded = $derived(calculateTimeNeededPerLevel(profession.id, maxLevel, playerState));
 
 	let canvas: HTMLCanvasElement;
 	let chart: Chart = $state() as Chart;
