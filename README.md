@@ -1,3 +1,6 @@
+> This repository is now archived due to me no longer playing the game :)
+> I'm sure there are many other, better tools out there!
+
 # Brighter Shores
 
 > A companion app for Andrew Gower's Brighter Shores
